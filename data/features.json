@@ -3611,7 +3611,9 @@
    "status": "Yet to Start",
    "priority": null,
    "source": null,
-   "pm": [],
+   "pm": [
+    "Pradeep Kumar"
+   ],
    "dev": [],
    "milestone": [],
    "releasedTo": [],
@@ -3635,11 +3637,19 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    },
+    {
+     "at": "2026-11-13T11:06:12.278Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "PM / Analyst",
+     "from": "(empty)",
+     "to": "Pradeep Kumar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-13T11:06:12.278Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-068",
