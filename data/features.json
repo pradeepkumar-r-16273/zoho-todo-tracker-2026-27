@@ -628,6 +628,34 @@
     }
    ],
    "core": true
+  },
+  {
+   "id": "cf_milestone_commited_sbm",
+   "name": "Milestone Commited",
+   "type": "singleSelect",
+   "width": 150,
+   "options": [
+    {
+     "name": "M289",
+     "color": "yellow"
+    },
+    {
+     "name": "M290",
+     "color": "cyan"
+    },
+    {
+     "name": "M291",
+     "color": "teal"
+    },
+    {
+     "name": "M292",
+     "color": "green"
+    },
+    {
+     "name": "M293",
+     "color": "yellow"
+    }
+   ]
   }
  ],
  "people": [
