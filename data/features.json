@@ -4388,7 +4388,7 @@
    "priority": null,
    "source": null,
    "pm": [
-    "Madhumitha Krishnamurthi"
+    "Pradeep Kumar"
    ],
    "dev": [],
    "milestone": [],
@@ -4421,10 +4421,26 @@
      "field": "Module",
      "from": "Calendar",
      "to": "Integrations"
+    },
+    {
+     "at": "2026-11-13T11:07:26.548Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "PM / Analyst",
+     "from": "Madhumitha Krishnamurthi",
+     "to": "Madhumitha Krishnamurthi, Pradeep Kumar"
+    },
+    {
+     "at": "2026-11-13T11:07:27.127Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "PM / Analyst",
+     "from": "Madhumitha Krishnamurthi, Pradeep Kumar",
+     "to": "Pradeep Kumar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:01:53.362Z",
+   "updatedAt": "2026-11-13T11:07:27.127Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
