@@ -1434,46 +1434,6 @@
    "updatedBy": "Seed import"
   },
   {
-   "id": "TD-019",
-   "name": "Webinar V2",
-   "module": "Calendar",
-   "phase": "Working on",
-   "status": "Testing",
-   "priority": null,
-   "source": null,
-   "pm": [
-    "Pradeep Kumar"
-   ],
-   "dev": [],
-   "milestone": [],
-   "releasedTo": [],
-   "startDate": null,
-   "targetDate": null,
-   "notes": "Testing in progress.",
-   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
-   "subitems": [],
-   "analysis": null,
-   "design": null,
-   "html": null,
-   "server": null,
-   "client": null,
-   "testing": "In Progress",
-   "mobile": null,
-   "attachments": [],
-   "comments": [],
-   "history": [
-    {
-     "at": "2026-11-13T09:00:00+05:30",
-     "by": "Seed import",
-     "action": "created",
-     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
-    }
-   ],
-   "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
-  },
-  {
    "id": "TD-020",
    "name": "Task Export Enhancement",
    "module": "Task Core",
@@ -5100,6 +5060,51 @@
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
    "updatedAt": "2026-11-13T11:00:20.210Z",
+   "updatedBy": "Pradeep Kumar"
+  },
+  {
+   "id": "TD-019",
+   "name": "Webinar V2",
+   "module": "Calendar",
+   "phase": "Working on",
+   "status": "Testing",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Testing in progress.",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": "In Progress",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    },
+    {
+     "at": "2026-11-13T11:00:27.177Z",
+     "by": "Pradeep Kumar",
+     "action": "deleted"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T11:00:27.177Z",
    "updatedBy": "Pradeep Kumar"
   }
  ]
