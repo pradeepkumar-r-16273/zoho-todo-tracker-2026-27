@@ -4764,7 +4764,6 @@
    "priority": null,
    "source": null,
    "pm": [
-    "Madhumitha Krishnamurthi",
     "Pradeep Kumar"
    ],
    "dev": [],
@@ -4798,10 +4797,18 @@
      "field": "PM / Analyst",
      "from": "Madhumitha Krishnamurthi",
      "to": "Madhumitha Krishnamurthi, Pradeep Kumar"
+    },
+    {
+     "at": "2026-11-13T11:07:52.048Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "PM / Analyst",
+     "from": "Madhumitha Krishnamurthi, Pradeep Kumar",
+     "to": "Pradeep Kumar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:07:51.198Z",
+   "updatedAt": "2026-11-13T11:07:52.048Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
@@ -4813,7 +4820,7 @@
    "priority": null,
    "source": null,
    "pm": [
-    "Madhumitha Krishnamurthi"
+    "Pradeep Kumar"
    ],
    "dev": [],
    "milestone": [],
@@ -4838,11 +4845,27 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    },
+    {
+     "at": "2026-11-13T11:07:54.427Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "PM / Analyst",
+     "from": "Madhumitha Krishnamurthi",
+     "to": "Madhumitha Krishnamurthi, Pradeep Kumar"
+    },
+    {
+     "at": "2026-11-13T11:07:55.043Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "PM / Analyst",
+     "from": "Madhumitha Krishnamurthi, Pradeep Kumar",
+     "to": "Pradeep Kumar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-13T11:07:55.043Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-089",
