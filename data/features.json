@@ -4238,7 +4238,7 @@
   {
    "id": "TD-081",
    "name": "Subtask Sync within Calendar",
-   "module": "Calendar",
+   "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
    "priority": null,
@@ -4269,11 +4269,19 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    },
+    {
+     "at": "2026-11-13T11:01:53.362Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Module",
+     "from": "Calendar",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-13T11:01:53.362Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-082",
