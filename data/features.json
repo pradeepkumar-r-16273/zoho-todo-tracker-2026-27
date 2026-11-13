@@ -4135,9 +4135,9 @@
    "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
    "subitems": [],
    "analysis": "Done",
-   "design": null,
+   "design": "Done",
    "html": null,
-   "server": null,
+   "server": "In Progress",
    "client": null,
    "testing": null,
    "mobile": null,
@@ -4173,10 +4173,26 @@
      "field": "Analysis",
      "from": "(empty)",
      "to": "Done"
+    },
+    {
+     "at": "2026-11-13T11:01:17.362Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Design",
+     "from": "(empty)",
+     "to": "Done"
+    },
+    {
+     "at": "2026-11-13T11:01:19.445Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Server",
+     "from": "(empty)",
+     "to": "In Progress"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:01:14.996Z",
+   "updatedAt": "2026-11-13T11:01:19.445Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
