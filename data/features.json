@@ -4138,8 +4138,8 @@
    "design": "Done",
    "html": null,
    "server": "Done",
-   "client": null,
-   "testing": null,
+   "client": "Done",
+   "testing": "Done",
    "mobile": null,
    "attachments": [],
    "comments": [],
@@ -4197,10 +4197,26 @@
      "field": "Server",
      "from": "In Progress",
      "to": "Done"
+    },
+    {
+     "at": "2026-11-13T11:01:25.712Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Client",
+     "from": "(empty)",
+     "to": "Done"
+    },
+    {
+     "at": "2026-11-13T11:01:27.479Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Testing",
+     "from": "(empty)",
+     "to": "Done"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:01:22.646Z",
+   "updatedAt": "2026-11-13T11:01:27.479Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
