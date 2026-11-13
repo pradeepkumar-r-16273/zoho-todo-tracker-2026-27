@@ -4076,46 +4076,6 @@
    "updatedBy": "Seed import"
   },
   {
-   "id": "TD-079",
-   "name": "Time Blocking / Auto-block Time in Calendar",
-   "module": "Calendar",
-   "phase": "Ideas / Backlog",
-   "status": "Idea",
-   "priority": null,
-   "source": null,
-   "pm": [
-    "Madhumitha Krishnamurthi"
-   ],
-   "dev": [],
-   "milestone": [],
-   "releasedTo": [],
-   "startDate": null,
-   "targetDate": null,
-   "notes": "Calendar task-sync based view with auto block time.",
-   "sourceNote": "Initial feature set to be taken (22 Dec 2025)",
-   "subitems": [],
-   "analysis": null,
-   "design": null,
-   "html": null,
-   "server": null,
-   "client": null,
-   "testing": null,
-   "mobile": null,
-   "attachments": [],
-   "comments": [],
-   "history": [
-    {
-     "at": "2026-11-13T09:00:00+05:30",
-     "by": "Seed import",
-     "action": "created",
-     "detail": "Imported from: Initial feature set to be taken (22 Dec 2025)"
-    }
-   ],
-   "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
-  },
-  {
    "id": "TD-080",
    "name": "Drag & Drop Tasks to Calendar",
    "module": "Integrations",
@@ -5201,6 +5161,51 @@
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
    "updatedAt": "2026-11-13T11:00:27.177Z",
+   "updatedBy": "Pradeep Kumar"
+  },
+  {
+   "id": "TD-079",
+   "name": "Time Blocking / Auto-block Time in Calendar",
+   "module": "Calendar",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Calendar task-sync based view with auto block time.",
+   "sourceNote": "Initial feature set to be taken (22 Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Initial feature set to be taken (22 Dec 2025)"
+    },
+    {
+     "at": "2026-11-13T11:02:06.312Z",
+     "by": "Pradeep Kumar",
+     "action": "deleted"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T11:02:06.312Z",
    "updatedBy": "Pradeep Kumar"
   }
  ]
