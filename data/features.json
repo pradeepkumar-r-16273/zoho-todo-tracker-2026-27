@@ -1342,48 +1342,6 @@
    "updatedBy": "Seed import"
   },
   {
-   "id": "TD-015",
-   "name": "Overdue Tasks in Calendar",
-   "module": "Calendar",
-   "phase": "Released",
-   "status": "Released",
-   "priority": null,
-   "source": null,
-   "pm": [
-    "Pradeep Kumar"
-   ],
-   "dev": [],
-   "milestone": [],
-   "releasedTo": [
-    "All DC"
-   ],
-   "startDate": null,
-   "targetDate": null,
-   "notes": "",
-   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
-   "subitems": [],
-   "analysis": null,
-   "design": null,
-   "html": null,
-   "server": "Done",
-   "client": "Done",
-   "testing": "Done",
-   "mobile": null,
-   "attachments": [],
-   "comments": [],
-   "history": [
-    {
-     "at": "2026-11-13T09:00:00+05:30",
-     "by": "Seed import",
-     "action": "created",
-     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
-    }
-   ],
-   "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
-  },
-  {
    "id": "TD-016",
    "name": "Tomorrow View in Agenda",
    "module": "Calendar",
@@ -5029,6 +4987,94 @@
    "createdAt": "2026-11-13T09:00:00+05:30",
    "updatedAt": "2026-11-13T09:00:00+05:30",
    "updatedBy": "Seed import"
+  }
+ ],
+ "views": [],
+ "milestones": [
+  {
+   "name": "M287",
+   "date": null
+  },
+  {
+   "name": "M288",
+   "date": null
+  },
+  {
+   "name": "M289",
+   "date": null
+  },
+  {
+   "name": "M290",
+   "date": null
+  },
+  {
+   "name": "M291",
+   "date": null
+  },
+  {
+   "name": "M292",
+   "date": null
+  },
+  {
+   "name": "M293",
+   "date": null
+  },
+  {
+   "name": "M294",
+   "date": null
+  },
+  {
+   "name": "M295",
+   "date": null
+  }
+ ],
+ "deleted": [
+  {
+   "id": "TD-015",
+   "name": "Overdue Tasks in Calendar",
+   "module": "Calendar",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    },
+    {
+     "at": "2026-11-13T10:59:44.747Z",
+     "by": "Pradeep Kumar",
+     "action": "deleted"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T10:59:44.747Z",
+   "updatedBy": "Pradeep Kumar"
   }
  ]
 }
