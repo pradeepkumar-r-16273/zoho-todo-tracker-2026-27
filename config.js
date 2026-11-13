@@ -1,8 +1,8 @@
 // Repository settings for the tracker. Every value can also be overridden per
 // browser from the in-app Settings dialog (gear icon).
 window.TRACKER_CONFIG = {
-  owner: "",                 // GitHub user or org that owns the repo, e.g. "pradeep-zoho"
-  repo: "zoho-todo-tracker", // repository name
+  owner: "pradeepkumar-r-16273", // GitHub user or org that owns the repo
+  repo: "zoho-todo-tracker-2026-27", // repository name
   branch: "main",
   apiBase: "https://api.github.com", // GitHub Enterprise: "https://<your-host>/api/v3"
   dataPath: "data/features.json",
