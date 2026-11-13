@@ -5333,7 +5333,7 @@
    "priority": null,
    "source": null,
    "pm": [
-    "Madhumitha Krishnamurthi"
+    "Pradeep Kumar"
    ],
    "dev": [],
    "milestone": [],
@@ -5358,11 +5358,27 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Initial feature set to be taken (22 Dec 2025)"
+    },
+    {
+     "at": "2026-11-13T11:08:18.764Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "PM / Analyst",
+     "from": "Madhumitha Krishnamurthi",
+     "to": "Madhumitha Krishnamurthi, Pradeep Kumar"
+    },
+    {
+     "at": "2026-11-13T11:08:19.714Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "PM / Analyst",
+     "from": "Madhumitha Krishnamurthi, Pradeep Kumar",
+     "to": "Pradeep Kumar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-13T11:08:19.714Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-098",
