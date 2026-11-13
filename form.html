@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit a Feature - Zoho ToDo Tracker</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232a78d6'/><path d='M9 16l5 5 9-10' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<style>
+:root{--bg:#f6f8fa;--card:#fff;--text:#1f2328;--muted:#656d76;--border:#d0d7de;--primary:#2a78d6;--primary-hover:#1f5fb0;--danger:#d1242f;--radius:8px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--card:#161b22;--text:#e6edf3;--muted:#8d96a0;--border:#30363d;--primary:#58a6ff;--primary-hover:#79b8ff}}
+:root[data-theme="dark"]{--bg:#0d1117;--card:#161b22;--text:#e6edf3;--muted:#8d96a0;--border:#30363d;--primary:#58a6ff;--primary-hover:#79b8ff}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.5}
+.container{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+header{margin-bottom:20px}
+h1{font-size:22px;margin:0 0 4px;font-weight:600}
+header p{margin:0;color:var(--muted);font-size:13px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:16px}
+.section-title{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 12px}
+.field{margin-bottom:14px}
+.field:last-child{margin-bottom:0}
+label{display:block;font-size:13px;font-weight:500;margin-bottom:4px}
+.field .hint{color:var(--muted);font-size:12px;margin-top:4px}
+.req{color:var(--danger);margin-left:2px}
+input[type="text"],input[type="email"],input[type="date"],select,textarea{width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--card);color:var(--text);font-size:14px;font-family:inherit}
+textarea{min-height:80px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--primary);outline-offset:-1px;border-color:transparent}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:500px){.two-col{grid-template-columns:1fr}}
+.checklist{display:flex;flex-wrap:wrap;gap:6px}
+.check-item{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border:1px solid var(--border);border-radius:999px;cursor:pointer;font-size:13px;user-select:none;background:var(--card)}
+.check-item input{margin:0}
+.check-item:hover{border-color:var(--primary)}
+.check-item input:checked + span{color:var(--primary);font-weight:500}
+.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:4px}
+button.btn{padding:8px 14px;border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:6px;cursor:pointer;font-size:14px;font-weight:500;font-family:inherit}
+button.btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+button.btn.primary:hover{background:var(--primary-hover);border-color:var(--primary-hover)}
+button.btn:disabled{opacity:.6;cursor:not-allowed}
+.status{font-size:13px;color:var(--muted)}
+.status.err{color:var(--danger)}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:24px}
+footer a{color:var(--primary);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Submit a feature idea</h1>
+<p>Zoho ToDo Product Development Tracker &mdash; roadmap 2026 / 27</p>
+</header>
+<div id="loading" class="card">Loading form&hellip;</div>
+<form id="form" style="display:none"></form>
+<footer>Submissions open a prefilled GitHub issue. You can also copy the JSON and send it any other way. &middot; <a href="./" >Back to tracker</a></footer>
+</div>
+<script>
+const REPO={owner:"pradeepkumar-r-16273",repo:"zoho-todo-tracker-2026-27"};
+const DATA_URL="./data/features.json";
+// Groups and the schema ids that go in them. Fields not listed here are rendered at the end under "More".
+const GROUPS=[
+ {title:"Basics",ids:["module","phase","status","priority","source"]},
+ {title:"Owners",ids:["pm","dev"]},
+ {title:"Timeline",ids:["startDate","targetDate","milestone","cf_milestone_commited_sbm"]},
+ {title:"Delivery stages",ids:["analysis","design","html","server","client","testing","mobile","releasedTo"]},
+ {title:"Context",ids:["sourceNote","notes","subitems"]}
+];
+const SKIP=new Set(["progress"]); // computed formula
 
+function el(tag,attrs,...kids){const n=document.createElement(tag);for(const k in attrs){const v=attrs[k];if(k==="class")n.className=v;else if(k==="text")n.textContent=v;else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);else if(v===true)n.setAttribute(k,"");else if(v!==false&&v!=null)n.setAttribute(k,v)}for(const c of kids){if(c==null)continue;n.appendChild(typeof c==="string"?document.createTextNode(c):c)}return n}
+
+function fieldWrap(label,required,control,hint){
+ const w=el("div",{class:"field"});
+ const l=el("label",{text:label});
+ if(required)l.appendChild(el("span",{class:"req",text:"*"}));
+ w.appendChild(l);w.appendChild(control);
+ if(hint)w.appendChild(el("div",{class:"hint",text:hint}));
+ return w;
+}
+
+async function init(){
+ let db;
+ try{
+  const r=await fetch(DATA_URL,{cache:"no-store"});
+  if(!r.ok)throw new Error("HTTP "+r.status);
+  db=await r.json();
+ }catch(e){
+  document.getElementById("loading").innerHTML='<div class="status err">Could not load schema: '+e.message+". Please reload.</div>";
+  return;
+ }
+ renderForm(db);
+}
+
+function renderForm(db){
+ const form=document.getElementById("form");
+ form.innerHTML="";
+ document.getElementById("loading").style.display="none";
+ form.style.display="";
+ const state={};
+ const byId={};
+ for(const f of db.schema)byId[f.id]=f;
+
+ // --- Basics: always starts with the Feature (name) field ---
+ const basics=el("div",{class:"card"});
+ basics.appendChild(el("div",{class:"section-title",text:"Basics"}));
+ const nameInput=el("input",{type:"text",id:"f-name",required:true,placeholder:"What is the feature?",oninput:e=>state["name"]=e.target.value});
+ basics.appendChild(fieldWrap("Feature",true,nameInput,"Short descriptive name. Becomes the record title."));
+ for(const id of GROUPS[0].ids){const f=byId[id];if(!f||SKIP.has(id))continue;basics.appendChild(renderField(f,state,db))}
+ form.appendChild(basics);
+
+ // --- Remaining groups ---
+ for(let i=1;i<GROUPS.length;i++){
+  const g=GROUPS[i];
+  const card=el("div",{class:"card"});
+  card.appendChild(el("div",{class:"section-title",text:g.title}));
+  if(g.title==="Timeline"){
+   // Dates side by side
+   const two=el("div",{class:"two-col"});
+   two.appendChild(renderField(byId["startDate"],state,db));
+   two.appendChild(renderField(byId["targetDate"],state,db));
+   card.appendChild(two);
+   for(const id of ["milestone","cf_milestone_commited_sbm"]){const f=byId[id];if(f)card.appendChild(renderField(f,state,db))}
+  }else{
+   for(const id of g.ids){const f=byId[id];if(!f||SKIP.has(id))continue;card.appendChild(renderField(f,state,db))}
+  }
+  form.appendChild(card);
+ }
+
+ // --- Any schema fields not covered above ---
+ const covered=new Set(["name",...GROUPS.flatMap(g=>g.ids),...SKIP]);
+ const extras=db.schema.filter(f=>!covered.has(f.id));
+ if(extras.length){
+  const card=el("div",{class:"card"});
+  card.appendChild(el("div",{class:"section-title",text:"More"}));
+  for(const f of extras)card.appendChild(renderField(f,state,db));
+  form.appendChild(card);
+ }
+
+ // --- Submitter ---
+ const sub=el("div",{class:"card"});
+ sub.appendChild(el("div",{class:"section-title",text:"You"}));
+ sub.appendChild(fieldWrap("Your name",false,el("input",{type:"text",placeholder:"For attribution (optional)",oninput:e=>state["_submitter"]=e.target.value})));
+ sub.appendChild(fieldWrap("Your email",false,el("input",{type:"email",placeholder:"If we need to follow up (optional)",oninput:e=>state["_email"]=e.target.value})));
+ form.appendChild(sub);
+
+ // --- Actions ---
+ const actCard=el("div",{class:"card"});
+ const row=el("div",{class:"actions"});
+ const submit=el("button",{type:"submit",class:"btn primary",text:"Submit via GitHub Issue"});
+ const copy=el("button",{type:"button",class:"btn",text:"Copy as JSON"});
+ const stat=el("span",{class:"status"});
+ row.appendChild(submit);row.appendChild(copy);row.appendChild(stat);
+ actCard.appendChild(row);
+ actCard.appendChild(el("div",{class:"hint",text:"Submitting opens a prefilled GitHub issue in a new tab — click ‘Submit new issue’ there to send it. A GitHub account is needed for that path. Prefer no sign‑in? Copy the JSON and send it however you like."}));
+ form.appendChild(actCard);
+
+ copy.addEventListener("click",async()=>{
+  const p=buildPayload(state,db);
+  try{await navigator.clipboard.writeText(JSON.stringify(p,null,2));stat.className="status";stat.textContent="Copied.";setTimeout(()=>stat.textContent="",2500)}
+  catch(e){stat.className="status err";stat.textContent="Copy failed: "+e.message}
+ });
+ form.addEventListener("submit",e=>{
+  e.preventDefault();
+  if(!state["name"]||!state["name"].trim()){stat.className="status err";stat.textContent="Feature name is required.";return}
+  const url=buildIssueUrl(state,db);
+  stat.className="status";stat.textContent="Opening GitHub…";
+  window.open(url,"_blank","noopener");
+  setTimeout(()=>stat.textContent="",3500);
+ });
+}
+
+function renderField(f,state,db){
+ const label=f.name;
+ if(f.type==="text"||f.type==="longText"){
+  const ctrl=f.type==="longText"?el("textarea",{oninput:e=>state[f.id]=e.target.value}):el("input",{type:"text",oninput:e=>state[f.id]=e.target.value});
+  return fieldWrap(label,false,ctrl);
+ }
+ if(f.type==="date"){
+  return fieldWrap(label,false,el("input",{type:"date",oninput:e=>state[f.id]=e.target.value||null}));
+ }
+ if(f.type==="singleSelect"&&f.options){
+  const s=el("select",{onchange:e=>state[f.id]=e.target.value||null});
+  s.appendChild(el("option",{value:"",text:"(none)"}));
+  for(const o of f.options)s.appendChild(el("option",{value:o.name,text:o.name}));
+  return fieldWrap(label,false,s);
+ }
+ if(f.type==="multiSelect"&&f.options){
+  return fieldWrap(label,false,multiCheck(f.id,f.options.map(o=>o.name),state),"Pick one or more.");
+ }
+ if(f.type==="people"){
+  return fieldWrap(label,false,multiCheck(f.id,(db.people||[]).map(p=>p.name),state),"Pick one or more.");
+ }
+ if(f.type==="checklist"){
+  const ta=el("textarea",{placeholder:"One per line",oninput:e=>state[f.id]=e.target.value.split("\n").map(s=>s.trim()).filter(Boolean).map(t=>({text:t,done:false}))});
+  return fieldWrap(label,false,ta,"One sub-item per line.");
+ }
+ return fieldWrap(label,false,el("input",{type:"text",oninput:e=>state[f.id]=e.target.value}));
+}
+
+function multiCheck(fieldId,names,state){
+ const wrap=el("div",{class:"checklist"});
+ state[fieldId]=[];
+ for(const name of names){
+  const lbl=el("label",{class:"check-item"});
+  const cb=el("input",{type:"checkbox",value:name,onchange:e=>{const set=new Set(state[fieldId]);if(e.target.checked)set.add(e.target.value);else set.delete(e.target.value);state[fieldId]=[...set]}});
+  lbl.appendChild(cb);lbl.appendChild(el("span",{text:name}));
+  wrap.appendChild(lbl);
+ }
+ return wrap;
+}
+
+function buildPayload(state,db){
+ const rec={};
+ for(const f of db.schema){
+  const v=state[f.id];
+  if(v==null||v===""||(Array.isArray(v)&&!v.length))continue;
+  rec[f.name]=v;
+ }
+ if(state["name"])rec["Feature"]=state["name"];
+ const sub={};
+ if(state["_submitter"])sub.name=state["_submitter"];
+ if(state["_email"])sub.email=state["_email"];
+ return{submittedAt:new Date().toISOString(),submitter:Object.keys(sub).length?sub:undefined,record:rec};
+}
+
+function buildIssueUrl(state,db){
+ const payload=buildPayload(state,db);
+ const title=`[Submission] ${state["name"].slice(0,80)}`;
+ const lines=[];
+ lines.push("A new feature idea was submitted from the public form.");
+ lines.push("");
+ if(payload.submitter){
+  lines.push(`**From:** ${payload.submitter.name||"(not provided)"}${payload.submitter.email?" — "+payload.submitter.email:""}`);
+  lines.push("");
+ }
+ lines.push("## Fields");
+ lines.push("");
+ lines.push("| Field | Value |");
+ lines.push("| --- | --- |");
+ for(const[k,v]of Object.entries(payload.record)){
+  if(k==="Feature")continue;
+  let display;
+  if(Array.isArray(v)){
+   if(v.length&&typeof v[0]==="object")display=v.map(x=>(x.done?"[x] ":"[ ] ")+x.text).join("<br>");
+   else display=v.join(", ");
+  }else display=String(v).replace(/\n/g,"<br>").replace(/\|/g,"\\|");
+  lines.push(`| **${k}** | ${display} |`);
+ }
+ lines.push("");
+ lines.push("<details><summary>Raw JSON</summary>");
+ lines.push("");
+ lines.push("```json");
+ lines.push(JSON.stringify(payload,null,2));
+ lines.push("```");
+ lines.push("");
+ lines.push("</details>");
+ const body=lines.join("\n");
+ const p=new URLSearchParams();
+ p.set("title",title);
+ p.set("body",body);
+ p.set("labels","feature-submission");
+ return`https://github.com/${REPO.owner}/${REPO.repo}/issues/new?${p.toString()}`;
+}
+
+init();
+</script>
+</body>
+</html>
