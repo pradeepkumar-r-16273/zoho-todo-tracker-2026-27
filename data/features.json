@@ -4118,7 +4118,7 @@
   {
    "id": "TD-080",
    "name": "Drag & Drop Tasks to Calendar",
-   "module": "Calendar",
+   "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Released",
    "priority": null,
@@ -4221,10 +4221,18 @@
      "field": "Status",
      "from": "Idea",
      "to": "Released"
+    },
+    {
+     "at": "2026-11-13T11:01:45.045Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Module",
+     "from": "Calendar",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:01:35.162Z",
+   "updatedAt": "2026-11-13T11:01:45.045Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
