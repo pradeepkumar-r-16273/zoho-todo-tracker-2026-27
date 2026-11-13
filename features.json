@@ -1,0 +1,5034 @@
+{
+ "version": 1,
+ "base": {
+  "name": "Zoho ToDo - Product Development Tracker",
+  "seededAt": "2026-11-13T09:00:00+05:30"
+ },
+ "schema": [
+  {
+   "id": "name",
+   "name": "Feature",
+   "type": "text",
+   "primary": true,
+   "width": 300,
+   "core": true
+  },
+  {
+   "id": "module",
+   "name": "Module",
+   "type": "singleSelect",
+   "width": 150,
+   "options": [
+    {
+     "name": "Task Core",
+     "color": "blue"
+    },
+    {
+     "name": "Task Views",
+     "color": "cyan"
+    },
+    {
+     "name": "AI",
+     "color": "purple"
+    },
+    {
+     "name": "Integrations",
+     "color": "teal"
+    },
+    {
+     "name": "Mail Integration",
+     "color": "orange"
+    },
+    {
+     "name": "Calendar",
+     "color": "green"
+    },
+    {
+     "name": "Admin Console",
+     "color": "red"
+    },
+    {
+     "name": "Migration",
+     "color": "yellow"
+    },
+    {
+     "name": "Mobile",
+     "color": "pink"
+    },
+    {
+     "name": "Platform",
+     "color": "gray"
+    },
+    {
+     "name": "Issues / Tickets",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "phase",
+   "name": "Phase",
+   "type": "singleSelect",
+   "width": 130,
+   "options": [
+    {
+     "name": "Released",
+     "color": "green"
+    },
+    {
+     "name": "Working on",
+     "color": "blue"
+    },
+    {
+     "name": "Roadmap",
+     "color": "purple"
+    },
+    {
+     "name": "Pipeline",
+     "color": "cyan"
+    },
+    {
+     "name": "Ideas / Backlog",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "status",
+   "name": "Status",
+   "type": "singleSelect",
+   "width": 140,
+   "options": [
+    {
+     "name": "Released",
+     "color": "green"
+    },
+    {
+     "name": "Releasing",
+     "color": "teal"
+    },
+    {
+     "name": "Testing",
+     "color": "cyan"
+    },
+    {
+     "name": "In Progress",
+     "color": "blue"
+    },
+    {
+     "name": "In Design",
+     "color": "purple"
+    },
+    {
+     "name": "Analysis Done",
+     "color": "yellow"
+    },
+    {
+     "name": "In Pipeline",
+     "color": "orange"
+    },
+    {
+     "name": "Yet to Start",
+     "color": "gray"
+    },
+    {
+     "name": "On Hold",
+     "color": "red"
+    },
+    {
+     "name": "Idea",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "priority",
+   "name": "Priority",
+   "type": "singleSelect",
+   "width": 110,
+   "options": [
+    {
+     "name": "P0 - Critical",
+     "color": "red"
+    },
+    {
+     "name": "P1 - High",
+     "color": "orange"
+    },
+    {
+     "name": "P2 - Medium",
+     "color": "yellow"
+    },
+    {
+     "name": "P3 - Low",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "progress",
+   "name": "Progress",
+   "type": "formula",
+   "width": 120,
+   "formula": "stageProgress",
+   "core": true
+  },
+  {
+   "id": "source",
+   "name": "Requirement Source",
+   "type": "singleSelect",
+   "width": 170,
+   "options": [
+    {
+     "name": "Customer Requirement",
+     "color": "blue"
+    },
+    {
+     "name": "Competitive Study",
+     "color": "purple"
+    },
+    {
+     "name": "Internal Feedback",
+     "color": "teal"
+    },
+    {
+     "name": "Support Ticket",
+     "color": "orange"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "pm",
+   "name": "PM / Analyst",
+   "type": "people",
+   "width": 160,
+   "core": true
+  },
+  {
+   "id": "dev",
+   "name": "Server Owner",
+   "type": "people",
+   "width": 160,
+   "core": true
+  },
+  {
+   "id": "milestone",
+   "name": "Milestone",
+   "type": "multiSelect",
+   "width": 140,
+   "options": [
+    {
+     "name": "M287",
+     "color": "gray"
+    },
+    {
+     "name": "M288",
+     "color": "blue"
+    },
+    {
+     "name": "M289",
+     "color": "cyan"
+    },
+    {
+     "name": "M290",
+     "color": "teal"
+    },
+    {
+     "name": "M291",
+     "color": "green"
+    },
+    {
+     "name": "M292",
+     "color": "yellow"
+    },
+    {
+     "name": "M293",
+     "color": "orange"
+    },
+    {
+     "name": "M294",
+     "color": "red"
+    },
+    {
+     "name": "M295",
+     "color": "purple"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "analysis",
+   "name": "Analysis",
+   "type": "singleSelect",
+   "width": 120,
+   "stage": true,
+   "options": [
+    {
+     "name": "Not Started",
+     "color": "gray"
+    },
+    {
+     "name": "In Pipeline",
+     "color": "orange"
+    },
+    {
+     "name": "In Progress",
+     "color": "blue"
+    },
+    {
+     "name": "Done",
+     "color": "green"
+    },
+    {
+     "name": "On Hold",
+     "color": "red"
+    },
+    {
+     "name": "N/A",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "design",
+   "name": "Design",
+   "type": "singleSelect",
+   "width": 120,
+   "stage": true,
+   "options": [
+    {
+     "name": "Not Started",
+     "color": "gray"
+    },
+    {
+     "name": "In Pipeline",
+     "color": "orange"
+    },
+    {
+     "name": "In Progress",
+     "color": "blue"
+    },
+    {
+     "name": "Done",
+     "color": "green"
+    },
+    {
+     "name": "On Hold",
+     "color": "red"
+    },
+    {
+     "name": "N/A",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "html",
+   "name": "HTML",
+   "type": "singleSelect",
+   "width": 120,
+   "stage": true,
+   "options": [
+    {
+     "name": "Not Started",
+     "color": "gray"
+    },
+    {
+     "name": "In Pipeline",
+     "color": "orange"
+    },
+    {
+     "name": "In Progress",
+     "color": "blue"
+    },
+    {
+     "name": "Done",
+     "color": "green"
+    },
+    {
+     "name": "On Hold",
+     "color": "red"
+    },
+    {
+     "name": "N/A",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "server",
+   "name": "Server",
+   "type": "singleSelect",
+   "width": 120,
+   "stage": true,
+   "options": [
+    {
+     "name": "Not Started",
+     "color": "gray"
+    },
+    {
+     "name": "In Pipeline",
+     "color": "orange"
+    },
+    {
+     "name": "In Progress",
+     "color": "blue"
+    },
+    {
+     "name": "Done",
+     "color": "green"
+    },
+    {
+     "name": "On Hold",
+     "color": "red"
+    },
+    {
+     "name": "N/A",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "client",
+   "name": "Client",
+   "type": "singleSelect",
+   "width": 120,
+   "stage": true,
+   "options": [
+    {
+     "name": "Not Started",
+     "color": "gray"
+    },
+    {
+     "name": "In Pipeline",
+     "color": "orange"
+    },
+    {
+     "name": "In Progress",
+     "color": "blue"
+    },
+    {
+     "name": "Done",
+     "color": "green"
+    },
+    {
+     "name": "On Hold",
+     "color": "red"
+    },
+    {
+     "name": "N/A",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "testing",
+   "name": "Testing",
+   "type": "singleSelect",
+   "width": 120,
+   "stage": true,
+   "options": [
+    {
+     "name": "Not Started",
+     "color": "gray"
+    },
+    {
+     "name": "In Pipeline",
+     "color": "orange"
+    },
+    {
+     "name": "In Progress",
+     "color": "blue"
+    },
+    {
+     "name": "Done",
+     "color": "green"
+    },
+    {
+     "name": "On Hold",
+     "color": "red"
+    },
+    {
+     "name": "N/A",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "mobile",
+   "name": "Mobile",
+   "type": "singleSelect",
+   "width": 120,
+   "stage": true,
+   "options": [
+    {
+     "name": "Not Started",
+     "color": "gray"
+    },
+    {
+     "name": "In Pipeline",
+     "color": "orange"
+    },
+    {
+     "name": "In Progress",
+     "color": "blue"
+    },
+    {
+     "name": "Done",
+     "color": "green"
+    },
+    {
+     "name": "On Hold",
+     "color": "red"
+    },
+    {
+     "name": "N/A",
+     "color": "gray"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "releasedTo",
+   "name": "Released To (DC)",
+   "type": "multiSelect",
+   "width": 200,
+   "options": [
+    {
+     "name": "All DC",
+     "color": "green"
+    },
+    {
+     "name": "IN",
+     "color": "teal"
+    },
+    {
+     "name": "US",
+     "color": "teal"
+    },
+    {
+     "name": "EU",
+     "color": "teal"
+    },
+    {
+     "name": "AU",
+     "color": "teal"
+    },
+    {
+     "name": "JP",
+     "color": "teal"
+    },
+    {
+     "name": "SA",
+     "color": "teal"
+    },
+    {
+     "name": "CA",
+     "color": "teal"
+    },
+    {
+     "name": "SG",
+     "color": "teal"
+    },
+    {
+     "name": "AE",
+     "color": "teal"
+    },
+    {
+     "name": "CN",
+     "color": "teal"
+    },
+    {
+     "name": "Zoho Corp",
+     "color": "teal"
+    },
+    {
+     "name": "Task Team",
+     "color": "teal"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "startDate",
+   "name": "Start Date",
+   "type": "date",
+   "width": 120,
+   "core": true
+  },
+  {
+   "id": "targetDate",
+   "name": "Target Date",
+   "type": "date",
+   "width": 120,
+   "core": true
+  },
+  {
+   "id": "subitems",
+   "name": "Sub-items",
+   "type": "checklist",
+   "width": 140,
+   "core": true
+  },
+  {
+   "id": "notes",
+   "name": "Notes",
+   "type": "longText",
+   "width": 320,
+   "core": true
+  },
+  {
+   "id": "sourceNote",
+   "name": "Source Note",
+   "type": "singleSelect",
+   "width": 240,
+   "options": [
+    {
+     "name": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+     "color": "gray"
+    },
+    {
+     "name": "Gayathri work items (03 Nov 2026)",
+     "color": "gray"
+    },
+    {
+     "name": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+     "color": "gray"
+    },
+    {
+     "name": "Server status for work items (15 Jul 2026, milestones to M293)",
+     "color": "gray"
+    },
+    {
+     "name": "Interoperability notes (Pradeep, 23 Dec 2025)",
+     "color": "gray"
+    },
+    {
+     "name": "Initial feature set to be taken (22 Dec 2025)",
+     "color": "gray"
+    },
+    {
+     "name": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+     "color": "gray"
+    },
+    {
+     "name": "Added in tracker",
+     "color": "blue"
+    }
+   ],
+   "core": true
+  }
+ ],
+ "people": [
+  {
+   "name": "Pradeep Kumar",
+   "role": "Product / Analysis",
+   "github": ""
+  },
+  {
+   "name": "Gayathri K",
+   "role": "Product / Analysis",
+   "github": ""
+  },
+  {
+   "name": "Madhumitha Krishnamurthi",
+   "role": "Product Lead",
+   "github": ""
+  },
+  {
+   "name": "Krishnakumar Krishnamoorthy",
+   "role": "Product Head",
+   "github": ""
+  },
+  {
+   "name": "Sivasankari P",
+   "role": "Server",
+   "github": ""
+  },
+  {
+   "name": "Anusya Devi S",
+   "role": "Server",
+   "github": ""
+  },
+  {
+   "name": "Vignesh R",
+   "role": "Server",
+   "github": ""
+  },
+  {
+   "name": "Sankar",
+   "role": "Server",
+   "github": ""
+  },
+  {
+   "name": "Praneesh Kumar Kandasamy",
+   "role": "Engineering",
+   "github": ""
+  },
+  {
+   "name": "Vasanthakumar V",
+   "role": "Engineering",
+   "github": ""
+  },
+  {
+   "name": "Praveen Kumar G",
+   "role": "Engineering",
+   "github": ""
+  }
+ ],
+ "nextId": 100,
+ "records": [
+  {
+   "id": "TD-001",
+   "name": "Generate Subtask and Description",
+   "module": "AI",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "IN",
+    "US",
+    "EU",
+    "AU",
+    "JP",
+    "SA",
+    "CA"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "SG and AE pending. Will not be released in CN.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-002",
+   "name": "Notification Email Template (Import & Export)",
+   "module": "Task Core",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": "Internal Feedback",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Released to all DCs. Corrections have been informed.",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-003",
+   "name": "Notification Email Template (Reminder)",
+   "module": "Task Core",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": "Internal Feedback",
+   "pm": [
+    "Gayathri K",
+    "Pradeep Kumar"
+   ],
+   "dev": [
+    "Anusya Devi S"
+   ],
+   "milestone": [
+    "M289",
+    "M290"
+   ],
+   "releasedTo": [
+    "IN",
+    "SG",
+    "CA",
+    "EU",
+    "US",
+    "AU",
+    "JP",
+    "CN"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Roadmap post (04 Nov) lists IN, SG, CA, EU, US, AU, JP, CN; Gayathri's 03 Nov note lists IN DC only - confirm. Server: Zoho logo change + reminder template (M289, completed in M290). Pradeep's Oct note: Notification Email template design completed.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-004",
+   "name": "Task Dashboard",
+   "module": "Task Core",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [
+    "Sivasankari P"
+   ],
+   "milestone": [
+    "M289"
+   ],
+   "releasedTo": [
+    "Zoho Corp"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Server: Progress stats & Priority chart sections (M289 - completed).",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-005",
+   "name": "Task Merge",
+   "module": "Task Core",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [
+    "Vignesh R"
+   ],
+   "milestone": [
+    "M289"
+   ],
+   "releasedTo": [
+    "Zoho Corp"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Server: Task merge assignee (M289 - completed). Merge notification provided; testing with notification changes pending.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [
+    {
+     "text": "Merge assignee (server)",
+     "done": true
+    },
+    {
+     "text": "Notification case testing",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "In Progress",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-006",
+   "name": "Task RHS Widget Integration",
+   "module": "Task Core",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "Task Team"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Released to Task Team. RHS NLP nearly completed (fine-tuning results); RHS feedback changes nearly completed; NLP & design-change test cases in testing.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [
+    {
+     "text": "RHS NLP fine-tuning",
+     "done": false
+    },
+    {
+     "text": "RHS feedback changes",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "In Progress",
+   "testing": "In Progress",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-007",
+   "name": "Flagged Email View Integration",
+   "module": "Mail Integration",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Flagged Email View - All DC released. Flagged email mobile support in progress (see Mobile item).",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": "In Progress",
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-008",
+   "name": "Task Dependency",
+   "module": "Task Core",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [
+    "M291"
+   ],
+   "releasedTo": [
+    "Task Team"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Released for team members; notification issues in testing. Server: failure entity IDs handled (M291); inter-group dependency handled.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [
+    {
+     "text": "Failure entity IDs (server)",
+     "done": true
+    },
+    {
+     "text": "Inter-group dependency",
+     "done": true
+    },
+    {
+     "text": "Notification issue fixes",
+     "done": false
+    },
+    {
+     "text": "Mobile support",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "In Progress",
+   "mobile": "In Progress",
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-009",
+   "name": "My Day",
+   "module": "Task Views",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-010",
+   "name": "Trash View",
+   "module": "Task Views",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-011",
+   "name": "Copy and Move",
+   "module": "Task Core",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-012",
+   "name": "Microsoft To Do Migration",
+   "module": "Migration",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-013",
+   "name": "Show All Subtasks",
+   "module": "Task Views",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-014",
+   "name": "Created By (Manage Fields)",
+   "module": "Task Views",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Analysis document available.",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-015",
+   "name": "Overdue Tasks in Calendar",
+   "module": "Calendar",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [
+    "All DC"
+   ],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-016",
+   "name": "Tomorrow View in Agenda",
+   "module": "Calendar",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Client pipeline: completed.",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": "Done",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-017",
+   "name": "CORS API",
+   "module": "Platform",
+   "phase": "Released",
+   "status": "Released",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [
+    "Sivasankari P"
+   ],
+   "milestone": [
+    "M288"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Was in localzoho; change included. M288 - completed.",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-018",
+   "name": "Multi-account Calendar",
+   "module": "Calendar",
+   "phase": "Working on",
+   "status": "Releasing",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Release in progress.",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "Done",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-019",
+   "name": "Webinar V2",
+   "module": "Calendar",
+   "phase": "Working on",
+   "status": "Testing",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Testing in progress.",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": "In Progress",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-020",
+   "name": "Task Export Enhancement",
+   "module": "Task Core",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [
+    "Sivasankari P"
+   ],
+   "milestone": [
+    "M289",
+    "M292"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Currently in HTML implementation; server API to be checked and taken for client implementation. First set of APIs shared; additional APIs & settings requested (M289). Zoho Sheet export pending on other-team dependency (M292).",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [
+    {
+     "text": "Export history",
+     "done": true
+    },
+    {
+     "text": "Export permission",
+     "done": true
+    },
+    {
+     "text": "Tag view export",
+     "done": false
+    },
+    {
+     "text": "Export to Zoho Sheet (M292)",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": "Done",
+   "html": "In Progress",
+   "server": "In Progress",
+   "client": "Not Started",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-021",
+   "name": "Task View Enhancement",
+   "module": "Task Views",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [
+    "Sivasankari P"
+   ],
+   "milestone": [
+    "M291"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Umbrella for view & preference work. Group by none should work with filter/sort preference & category (M291). Filter by Task owner released; group by owner to be taken.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [
+    {
+     "text": "Custom priority (see separate item)",
+     "done": false
+    },
+    {
+     "text": "Filter & sort unification / consistent group by",
+     "done": false
+    },
+    {
+     "text": "Group by none & Created by",
+     "done": false
+    },
+    {
+     "text": "Expand / collapse",
+     "done": false
+    },
+    {
+     "text": "Hide section",
+     "done": false
+    },
+    {
+     "text": "Preference handling",
+     "done": false
+    },
+    {
+     "text": "Filter by task owner",
+     "done": true
+    },
+    {
+     "text": "Group by task owner",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "In Progress",
+   "client": "In Progress",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-022",
+   "name": "Custom Priority",
+   "module": "Task Views",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [
+    "Anusya Devi S"
+   ],
+   "milestone": [
+    "M291",
+    "M292"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Analysis doc with POC available. Server & design in progress. Also covers default priority, default status and priority sorting.",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [
+    {
+     "text": "Default priority",
+     "done": false
+    },
+    {
+     "text": "Default status",
+     "done": false
+    },
+    {
+     "text": "Sort by priority",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": "In Progress",
+   "html": null,
+   "server": "In Progress",
+   "client": "Not Started",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-023",
+   "name": "TickTick Migration",
+   "module": "Migration",
+   "phase": "Working on",
+   "status": "Testing",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Implementation nearly completed - about to be released. DPIA document done. Testing: WS case notification.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "In Progress",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-024",
+   "name": "AI Agents - Reporting Agent",
+   "module": "AI",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [
+    "Anusya Devi S"
+   ],
+   "milestone": [
+    "M292"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "V1 currently implemented via Agent Playground. Design in progress.",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "In Progress",
+   "html": null,
+   "server": "In Progress",
+   "client": "In Progress",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-025",
+   "name": "AI Agents - Task Assistant",
+   "module": "AI",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [
+    "Sivasankari P"
+   ],
+   "milestone": [
+    "M291",
+    "M292"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Server: group-wise assignee count API (M291), group distribution cases (M292). Client in progress.",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [
+    {
+     "text": "Group-wise assignee count API (M291)",
+     "done": false
+    },
+    {
+     "text": "Group distribution cases (M292)",
+     "done": false
+    }
+   ],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "In Progress",
+   "client": "In Progress",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-026",
+   "name": "Voice to Text with NLP",
+   "module": "AI",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Client team exploring voice-to-text implementations and NLP parsing libraries. Related: NLP & '/' command input creation (server, similar approach to Quick Add).",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": "In Progress",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-027",
+   "name": "Workflow / Basic Automation",
+   "module": "Task Core",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [
+    "M287",
+    "M288",
+    "M289",
+    "M290"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Workflow / Blueprint analysis completed. Server framework in progress (287/288); workflow issues M289 (completed in M290). Client in progress. Design: mail component.",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "In Progress",
+   "html": null,
+   "server": "In Progress",
+   "client": "In Progress",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-028",
+   "name": "AI Dashboard",
+   "module": "AI",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Related server work: insights multiple filter API (task count).",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-029",
+   "name": "Print Tasks",
+   "module": "Task Core",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Server print enhancement completed; permission/group-level cases & Save as PDF API to be shared. Analysis completed and moved to design. Client in pipeline.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [
+    {
+     "text": "Permission / group level cases",
+     "done": false
+    },
+    {
+     "text": "Save as PDF",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": "In Progress",
+   "html": null,
+   "server": "Done",
+   "client": "In Pipeline",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-030",
+   "name": "Reminder & Recurrence Enhancements",
+   "module": "Task Core",
+   "phase": "Working on",
+   "status": "Testing",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [
+    "Sivasankari P"
+   ],
+   "milestone": [
+    "M289",
+    "M290"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Recurring: Timeline & Periodic (M289, completed M290). Reminder: email reminder to check; custom name ETA pending; notification owner/method TBD. Recurring test cases yet to be shared.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [
+    {
+     "text": "Recurring - Timeline & Periodic",
+     "done": true
+    },
+    {
+     "text": "Email reminder",
+     "done": false
+    },
+    {
+     "text": "Custom name",
+     "done": false
+    },
+    {
+     "text": "Recurring test cases shared",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "In Progress",
+   "client": "Done",
+   "testing": "In Progress",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-031",
+   "name": "Group Tags",
+   "module": "Task Core",
+   "phase": "Working on",
+   "status": "Testing",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [
+    "Sivasankari P"
+   ],
+   "milestone": [
+    "M288"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Custom group label support & filter support completed (M288). Client completed - issue fixes in testing. Group & personal tags filter/sort option to be discussed later.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Done",
+   "client": "Done",
+   "testing": "In Progress",
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-032",
+   "name": "My Day V2 / Enhancements",
+   "module": "Task Views",
+   "phase": "Working on",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Analysis completed; server in progress. Support ticket: current due date separation (in pipeline).",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [
+    {
+     "text": "Current due date separation (support ticket)",
+     "done": false
+    },
+    {
+     "text": "My Day in mobile",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": null,
+   "html": null,
+   "server": "In Progress",
+   "client": "In Pipeline",
+   "testing": null,
+   "mobile": "In Progress",
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-033",
+   "name": "GitHub / GitLab Integration",
+   "module": "Integrations",
+   "phase": "Roadmap",
+   "status": "Analysis Done",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Analysis document done; server implementation to be taken. Design in progress.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "In Progress",
+   "html": null,
+   "server": "Not Started",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-034",
+   "name": "Unified External Integrations",
+   "module": "Integrations",
+   "phase": "Roadmap",
+   "status": "In Pipeline",
+   "priority": "P1 - High",
+   "source": "Competitive Study",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [
+    "Sankar"
+   ],
+   "milestone": [
+    "M292",
+    "M293"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Flagged as priority. Owner meeting scheduled; server M293. Interoperability approach: API & auth, one-way read-only import, 2-way sync (Asana/Jira/ClickUp), connector partners (Zapier, IFTTT, Integrately, Power Automate, Unito), rules/event webhooks (Mail, CRM, external), ToDo marketplace.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [
+    {
+     "text": "API & auth implementation",
+     "done": false
+    },
+    {
+     "text": "One-way sync (read-only import)",
+     "done": false
+    },
+    {
+     "text": "2-way sync",
+     "done": false
+    },
+    {
+     "text": "Connector partners (Zapier, IFTTT, Integrately, Power Automate, Unito)",
+     "done": false
+    },
+    {
+     "text": "Rules / event-based webhooks",
+     "done": false
+    },
+    {
+     "text": "Marketplace for Zoho ToDo",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": null,
+   "html": null,
+   "server": "In Pipeline",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [
+    {
+     "id": "a0",
+     "kind": "link",
+     "name": "Asana OAuth docs",
+     "url": "https://developers.asana.com/docs/oauth",
+     "by": "Seed import",
+     "at": "2026-11-13T09:00:00+05:30"
+    },
+    {
+     "id": "a1",
+     "kind": "link",
+     "name": "Asana webhooks",
+     "url": "https://developers.asana.com/reference/webhooks",
+     "by": "Seed import",
+     "at": "2026-11-13T09:00:00+05:30"
+    },
+    {
+     "id": "a2",
+     "kind": "link",
+     "name": "Todoist Sync API v9",
+     "url": "https://developer.todoist.com/sync/v9/",
+     "by": "Seed import",
+     "at": "2026-11-13T09:00:00+05:30"
+    },
+    {
+     "id": "a3",
+     "kind": "link",
+     "name": "Todoist webhooks",
+     "url": "https://developer.todoist.com/guides/#webhooks",
+     "by": "Seed import",
+     "at": "2026-11-13T09:00:00+05:30"
+    },
+    {
+     "id": "a4",
+     "kind": "link",
+     "name": "Trello webhooks guide",
+     "url": "https://developer.atlassian.com/cloud/trello/guides/rest-api/webhooks/",
+     "by": "Seed import",
+     "at": "2026-11-13T09:00:00+05:30"
+    },
+    {
+     "id": "a5",
+     "kind": "link",
+     "name": "ClickUp API - Get tasks",
+     "url": "https://developer.clickup.com/reference/gettasks",
+     "by": "Seed import",
+     "at": "2026-11-13T09:00:00+05:30"
+    },
+    {
+     "id": "a6",
+     "kind": "link",
+     "name": "ClickUp webhooks",
+     "url": "https://developer.clickup.com/reference/getwebhooks",
+     "by": "Seed import",
+     "at": "2026-11-13T09:00:00+05:30"
+    }
+   ],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-035",
+   "name": "Notification Customisation",
+   "module": "Task Core",
+   "phase": "Roadmap",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [
+    "Sivasankari P"
+   ],
+   "milestone": [
+    "M291",
+    "M292"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Analysis & design completed. Server in progress - pending other-team dependency, to be provided in dev-task (M292). Client in progress. Idea: digest email reports by reportee/group.",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "In Progress",
+   "client": "In Progress",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-036",
+   "name": "Approval Workflow",
+   "module": "Task Core",
+   "phase": "Roadmap",
+   "status": "Analysis Done",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Approval flow analysis completed. Server & design in pipeline.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "In Pipeline",
+   "html": null,
+   "server": "In Pipeline",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-037",
+   "name": "User Role & Permissions Management",
+   "module": "Admin Console",
+   "phase": "Roadmap",
+   "status": "Analysis Done",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Analysis completed. Security-side permissions; server to assess customisation scope. Includes role customisation within group (assign / change status by role).",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "In Pipeline",
+   "html": null,
+   "server": "In Pipeline",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-038",
+   "name": "Task Admin Console & Enhancements",
+   "module": "Admin Console",
+   "phase": "Roadmap",
+   "status": "In Pipeline",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Server in pipeline. Ideas: admin controls, audit logs.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "In Pipeline",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-039",
+   "name": "Task Create Form & Quick Add Enhancement",
+   "module": "Task Core",
+   "phase": "Roadmap",
+   "status": "In Design",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [
+    "M289"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Server analysis M289 (reminder, recurring task, create/view expanded); REST API can be used. Design analysis completed with few fixes. Quick Add in design.",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [
+    {
+     "text": "Reminder",
+     "done": false
+    },
+    {
+     "text": "Recurring task",
+     "done": true
+    },
+    {
+     "text": "Create / View (expanded)",
+     "done": false
+    },
+    {
+     "text": "Quick Add",
+     "done": false
+    }
+   ],
+   "analysis": "Done",
+   "design": "In Progress",
+   "html": null,
+   "server": "In Progress",
+   "client": "In Pipeline",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-040",
+   "name": "Unified Agenda Task",
+   "module": "Task Views",
+   "phase": "Roadmap",
+   "status": "In Pipeline",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Client in pipeline. Server to be taken up; discuss with integration team.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "Not Started",
+   "client": "In Pipeline",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-041",
+   "name": "Calendar View",
+   "module": "Task Views",
+   "phase": "Roadmap",
+   "status": "In Design",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Design completed. View to be discussed with Krishna and taken up for implementation if needed.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": "Done",
+   "html": null,
+   "server": null,
+   "client": "Not Started",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-042",
+   "name": "Table View",
+   "module": "Task Views",
+   "phase": "Roadmap",
+   "status": "In Design",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Design in progress.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": "In Progress",
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-043",
+   "name": "Publish Task V2",
+   "module": "Task Core",
+   "phase": "Roadmap",
+   "status": "Analysis Done",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Analysis completed; server in pipeline.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": null,
+   "html": null,
+   "server": "In Pipeline",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-044",
+   "name": "Group Summary",
+   "module": "Task Core",
+   "phase": "Roadmap",
+   "status": "Yet to Start",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-045",
+   "name": "Zoho Mail - ToDo Integration",
+   "module": "Mail Integration",
+   "phase": "Roadmap",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Internal Feedback",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Analysis in progress (tight integration for task & productivity management).",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "In Progress",
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-046",
+   "name": "Books Integration in Unified Task",
+   "module": "Integrations",
+   "phase": "Roadmap",
+   "status": "On Hold",
+   "priority": null,
+   "source": "Customer Requirement",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "In pipeline - on hold.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "On Hold",
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-047",
+   "name": "Time Logging",
+   "module": "Task Core",
+   "phase": "Roadmap",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "POC in progress. Related idea: work time tracking.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "In Progress",
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-048",
+   "name": "Task Insights & Rebalancing",
+   "module": "AI",
+   "phase": "Roadmap",
+   "status": "In Pipeline",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Server exploring sub-group for rebalancing; implementation doc to be shared. Insights multiple filter API for task count.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "In Progress",
+   "design": null,
+   "html": null,
+   "server": "In Progress",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-049",
+   "name": "Task Import - New Design",
+   "module": "Task Core",
+   "phase": "Roadmap",
+   "status": "In Design",
+   "priority": null,
+   "source": "Internal Feedback",
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "HTML available. Client implementation listed.",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": "Done",
+   "html": "Done",
+   "server": null,
+   "client": "In Pipeline",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-050",
+   "name": "Task Templates",
+   "module": "Task Core",
+   "phase": "Roadmap",
+   "status": "In Design",
+   "priority": "P1 - High",
+   "source": "Competitive Study",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [
+    "M293"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Analysis completed; design in progress; server M293 (API not yet provided). Idea: industry templates (medicare, IT, finance services).",
+   "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "In Progress",
+   "html": null,
+   "server": "In Pipeline",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-051",
+   "name": "Individual Task Summary",
+   "module": "AI",
+   "phase": "Pipeline",
+   "status": "On Hold",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Taken under implementation then kept on hold. Design completed. Server API shared; refinement requested.",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": "Done",
+   "design": "Done",
+   "html": null,
+   "server": "In Progress",
+   "client": "On Hold",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-052",
+   "name": "Feature Stats (ClickHouse)",
+   "module": "Platform",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Internal Feedback",
+   "pm": [
+    "Gayathri K",
+    "Pradeep Kumar"
+   ],
+   "dev": [
+    "Anusya Devi S"
+   ],
+   "milestone": [
+    "M291"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Central QA to enable for test account.",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "In Progress",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [
+    {
+     "id": "c0",
+     "by": "Madhumitha Krishnamurthi",
+     "at": "2026-07-21T10:54:00+05:30",
+     "text": "Vignesh R in which milestone are we pushing ClickHouse stats? cc Pradeep Kumar. (Update: got it - in 290)"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-053",
+   "name": "Sign-up Flow",
+   "module": "Platform",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [
+    "M293"
+   ],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Server in progress, M293.",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": "In Progress",
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-054",
+   "name": "Group Task Sync in Calendar",
+   "module": "Calendar",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": "In Progress",
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-055",
+   "name": "Timeline Issue Enhancements",
+   "module": "Issues / Tickets",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Support Ticket",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": "In Progress",
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-056",
+   "name": "POC Setup - ToDo",
+   "module": "Platform",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": "In Progress",
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-057",
+   "name": "Task Sync in Calendar (Mobile API)",
+   "module": "Mobile",
+   "phase": "Pipeline",
+   "status": "Yet to Start",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Yet to be shared.",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": "Not Started",
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-058",
+   "name": "Saved Search (Mobile)",
+   "module": "Mobile",
+   "phase": "Pipeline",
+   "status": "Yet to Start",
+   "priority": null,
+   "source": "Support Ticket",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Mobile support ticket - yet to be taken. Related idea: smart lists / saved filter views.",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": "Not Started",
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-059",
+   "name": "Flagged Email - Mobile Support",
+   "module": "Mobile",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": "In Progress",
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-060",
+   "name": "My Day View - Mobile Support",
+   "module": "Mobile",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": "In Progress",
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-061",
+   "name": "Dependency Task - Mobile Support",
+   "module": "Mobile",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Pradeep work items - Oct 2026 update (27 Oct 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": "In Progress",
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-062",
+   "name": "Bulk Copy / Move - Change Category",
+   "module": "Task Core",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": "In Progress",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-063",
+   "name": "Small Enhancements - Description / Hidden Groups / Parent Task Indication",
+   "module": "Task Views",
+   "phase": "Pipeline",
+   "status": "Yet to Start",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "HTML available for all three; yet to take.",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [
+    {
+     "text": "Description indication",
+     "done": false
+    },
+    {
+     "text": "Hidden groups",
+     "done": false
+    },
+    {
+     "text": "Parent task indication",
+     "done": false
+    }
+   ],
+   "analysis": null,
+   "design": null,
+   "html": "Done",
+   "server": null,
+   "client": "Not Started",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-064",
+   "name": "Quick Navigation",
+   "module": "Task Views",
+   "phase": "Pipeline",
+   "status": "On Hold",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Gayathri K"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "On hold due to expand / collapse.",
+   "sourceNote": "Gayathri work items (03 Nov 2026)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": "On Hold",
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-065",
+   "name": "Listing Field Preference - Manage Field",
+   "module": "Task Views",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Check if My Day / Flagged shown in list; also check custom fields (Pradeep).",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-066",
+   "name": "Mandatory Custom Field Issues",
+   "module": "Issues / Tickets",
+   "phase": "Pipeline",
+   "status": "In Progress",
+   "priority": null,
+   "source": "Support Ticket",
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Work in progress with issues; ticket to be shared (Pradeep).",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-067",
+   "name": "Project V3 Migration / Project Dependency Issues",
+   "module": "Issues / Tickets",
+   "phase": "Pipeline",
+   "status": "Yet to Start",
+   "priority": null,
+   "source": null,
+   "pm": [],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-068",
+   "name": "Preference Changes Issues",
+   "module": "Issues / Tickets",
+   "phase": "Pipeline",
+   "status": "Yet to Start",
+   "priority": null,
+   "source": null,
+   "pm": [],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Will be checked and shared.",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-069",
+   "name": "Trash Reminder Issue",
+   "module": "Issues / Tickets",
+   "phase": "Pipeline",
+   "status": "Yet to Start",
+   "priority": null,
+   "source": null,
+   "pm": [],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Live; to be checked.",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-070",
+   "name": "NLP & '/' Command Input Creation",
+   "module": "AI",
+   "phase": "Pipeline",
+   "status": "Yet to Start",
+   "priority": null,
+   "source": "Competitive Study",
+   "pm": [],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Similar approach to Quick Add.",
+   "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-071",
+   "name": "Keyboard Shortcuts",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-072",
+   "name": "Custom Fields - Better Options & AI Fields",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-073",
+   "name": "Smart Lists / Saved Filter Views",
+   "module": "Task Views",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Multiple filters saved as filter views.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-074",
+   "name": "AI-generated Custom Filter Views",
+   "module": "AI",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Today focus tasks, high priority this week, my delegated tasks.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-075",
+   "name": "Recent Tasks",
+   "module": "Task Views",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-076",
+   "name": "Progress Stats & AI Reports",
+   "module": "AI",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Progress stats on current/custom fields; generate report/summary on progress and blockers.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-077",
+   "name": "Activity Log for Group / View",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-078",
+   "name": "Daily Digest Mails",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Digest email reports by reportee, groups etc.",
+   "sourceNote": "Initial feature set to be taken (22 Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Initial feature set to be taken (22 Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-079",
+   "name": "Time Blocking / Auto-block Time in Calendar",
+   "module": "Calendar",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Calendar task-sync based view with auto block time.",
+   "sourceNote": "Initial feature set to be taken (22 Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Initial feature set to be taken (22 Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-080",
+   "name": "Drag & Drop Tasks to Calendar",
+   "module": "Calendar",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "CX requested.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-081",
+   "name": "Subtask Sync within Calendar",
+   "module": "Calendar",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Not yet done.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-082",
+   "name": "Task Voting & Poll",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Need to check.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-083",
+   "name": "Focus Session - Pomodoro (flexible intervals)",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-084",
+   "name": "Collaborative Goal Tracking",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-085",
+   "name": "Checklists",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-086",
+   "name": "SLA-based Task Reminder",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Improve SLA-based reminders.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-087",
+   "name": "Shift-based Task Management",
+   "module": "Task Core",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "E.g. doctors.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-088",
+   "name": "Developer Focus Insights (distraction alerts, deep-work score)",
+   "module": "AI",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "AI-based distraction alerts; weekly deep-work score for devs.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-089",
+   "name": "Outlook Mail - ToDo Integration",
+   "module": "Integrations",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Flagged email in Outlook; drag a mail onto ToDo icon to create task; flagged names synced.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [
+    {
+     "id": "a0",
+     "kind": "link",
+     "name": "Todoist - email to Todoist (AI)",
+     "url": "https://www.todoist.com/help/articles/email-to-todoist-powered-by-ai-march-13-mqcbjiN6q",
+     "by": "Seed import",
+     "at": "2026-11-13T09:00:00+05:30"
+    }
+   ],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-090",
+   "name": "OneNote - ToDo Integration",
+   "module": "Integrations",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Task creation from notes; tasks linked to note sections.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-091",
+   "name": "MS Teams - ToDo Integration",
+   "module": "Integrations",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Create/assign tasks in Teams; shared lists linked to channels; notifications in Teams.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-092",
+   "name": "Slack / Jira Deep Integration & Sync",
+   "module": "Integrations",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Trigger tasks from Git events; auto-generated build/deploy failure tasks.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-093",
+   "name": "WhatsApp Integration",
+   "module": "Integrations",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-094",
+   "name": "Tight Integration with Cliq",
+   "module": "Integrations",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-095",
+   "name": "WorkDrive File Management Integration",
+   "module": "Integrations",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Tie up documents with tasks.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-096",
+   "name": "Comment-based Entity Association",
+   "module": "Integrations",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Associate Streams, posts, note comments with tasks.",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-097",
+   "name": "Browser Extension",
+   "module": "Platform",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Initial feature set to be taken (22 Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Initial feature set to be taken (22 Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-098",
+   "name": "Plugin",
+   "module": "Platform",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Initial feature set to be taken (22 Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Initial feature set to be taken (22 Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  },
+  {
+   "id": "TD-099",
+   "name": "Compliance Readiness",
+   "module": "Platform",
+   "phase": "Ideas / Backlog",
+   "status": "Idea",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Madhumitha Krishnamurthi"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "Keep compliance ready (noted Dec 2025).",
+   "sourceNote": "Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)",
+   "subitems": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "attachments": [],
+   "comments": [],
+   "history": [
+    {
+     "at": "2026-11-13T09:00:00+05:30",
+     "by": "Seed import",
+     "action": "created",
+     "detail": "Imported from: Ideas & potential roadmap (Madhumitha, Jul-Dec 2025)"
+    }
+   ],
+   "createdAt": "2026-11-13T09:00:00+05:30",
+   "updatedAt": "2026-11-13T09:00:00+05:30",
+   "updatedBy": "Seed import"
+  }
+ ]
+}
