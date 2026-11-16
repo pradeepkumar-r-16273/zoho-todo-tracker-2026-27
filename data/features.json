@@ -1377,7 +1377,7 @@
    "module": "Migration",
    "phase": "Released",
    "status": "Released",
-   "priority": null,
+   "priority": "P1 - High",
    "source": null,
    "pm": [
     "Gayathri K"
@@ -1408,11 +1408,19 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    },
+    {
+     "at": "2026-11-16T08:37:32.547Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-16T08:37:32.547Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-013",
