@@ -217,6 +217,13 @@
    "core": true
   },
   {
+   "id": "clientOwner",
+   "name": "Client Owner",
+   "type": "people",
+   "width": 160,
+   "core": false
+  },
+  {
    "id": "milestone",
    "name": "Milestone",
    "type": "multiSelect",
@@ -561,6 +568,28 @@
    "core": true
   },
   {
+   "id": "allReleasedStatus",
+   "name": "All Released Status",
+   "type": "singleSelect",
+   "width": 160,
+   "readonly": true,
+   "core": false,
+   "options": [
+    {
+     "name": "All DC Released",
+     "color": "green"
+    },
+    {
+     "name": "Partially Released",
+     "color": "orange"
+    },
+    {
+     "name": "Not Released",
+     "color": "gray"
+    }
+   ]
+  },
+  {
    "id": "startDate",
    "name": "Start Date",
    "type": "date",
@@ -729,6 +758,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "IN",
@@ -777,6 +807,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "All DC"
@@ -822,6 +853,7 @@
    "dev": [
     "Anusya Devi S"
    ],
+   "clientOwner": [],
    "milestone": [
     "M289",
     "M290"
@@ -876,6 +908,7 @@
    "dev": [
     "Sivasankari P"
    ],
+   "clientOwner": [],
    "milestone": [
     "M289"
    ],
@@ -922,6 +955,7 @@
    "dev": [
     "Vignesh R"
    ],
+   "clientOwner": [],
    "milestone": [
     "M289"
    ],
@@ -975,6 +1009,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "Task Team"
@@ -1026,6 +1061,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "All DC"
@@ -1068,6 +1104,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [
     "M291"
    ],
@@ -1129,6 +1166,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "All DC"
@@ -1171,6 +1209,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "All DC"
@@ -1213,6 +1252,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "All DC"
@@ -1255,6 +1295,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "All DC"
@@ -1297,6 +1338,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "All DC"
@@ -1339,6 +1381,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "All DC"
@@ -1381,6 +1424,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -1431,6 +1475,7 @@
    "dev": [
     "Sivasankari P"
    ],
+   "clientOwner": [],
    "milestone": [
     "M288"
    ],
@@ -1475,6 +1520,7 @@
    "dev": [
     "Sivasankari P"
    ],
+   "clientOwner": [],
    "milestone": [
     "M289",
     "M292"
@@ -1537,6 +1583,7 @@
    "dev": [
     "Sivasankari P"
    ],
+   "clientOwner": [],
    "milestone": [
     "M291"
    ],
@@ -1614,6 +1661,7 @@
    "dev": [
     "Anusya Devi S"
    ],
+   "clientOwner": [],
    "milestone": [
     "M291",
     "M292"
@@ -1670,6 +1718,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -1712,6 +1761,7 @@
    "dev": [
     "Anusya Devi S"
    ],
+   "clientOwner": [],
    "milestone": [
     "M292"
    ],
@@ -1756,6 +1806,7 @@
    "dev": [
     "Sivasankari P"
    ],
+   "clientOwner": [],
    "milestone": [
     "M291",
     "M292"
@@ -1808,6 +1859,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -1848,6 +1900,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [
     "M287",
     "M288",
@@ -1893,6 +1946,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -1933,6 +1987,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -1984,6 +2039,7 @@
    "dev": [
     "Sivasankari P"
    ],
+   "clientOwner": [],
    "milestone": [
     "M289",
     "M290"
@@ -2046,6 +2102,7 @@
    "dev": [
     "Sivasankari P"
    ],
+   "clientOwner": [],
    "milestone": [
     "M288"
    ],
@@ -2088,6 +2145,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2137,6 +2195,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2179,6 +2238,7 @@
    "dev": [
     "Sankar"
    ],
+   "clientOwner": [],
    "milestone": [
     "M292",
     "M293"
@@ -2306,6 +2366,7 @@
    "dev": [
     "Sivasankari P"
    ],
+   "clientOwner": [],
    "milestone": [
     "M291",
     "M292"
@@ -2349,6 +2410,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2389,6 +2451,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2429,6 +2492,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2469,6 +2533,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [
     "M289"
    ],
@@ -2528,6 +2593,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2568,6 +2634,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2608,6 +2675,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2648,6 +2716,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2686,6 +2755,7 @@
    "source": "Competitive Study",
    "pm": [],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2726,6 +2796,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2766,6 +2837,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2806,6 +2878,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2846,6 +2919,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2886,6 +2960,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -2926,6 +3001,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [
     "M293"
    ],
@@ -2968,6 +3044,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3011,6 +3088,7 @@
    "dev": [
     "Anusya Devi S"
    ],
+   "clientOwner": [],
    "milestone": [
     "M291"
    ],
@@ -3060,6 +3138,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [
     "M293"
    ],
@@ -3102,6 +3181,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3150,6 +3230,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3190,6 +3271,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3230,6 +3312,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3270,6 +3353,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3310,6 +3394,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3350,6 +3435,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3390,6 +3476,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3430,6 +3517,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3470,6 +3558,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3523,6 +3612,7 @@
     "Gayathri K"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3563,6 +3653,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3603,6 +3694,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3643,6 +3735,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3691,6 +3784,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3739,6 +3833,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3787,6 +3882,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3843,6 +3939,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3899,6 +3996,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -3955,6 +4053,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4011,6 +4110,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4067,6 +4167,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4123,6 +4224,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4179,6 +4281,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4251,6 +4354,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4307,6 +4411,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4427,6 +4532,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4491,6 +4597,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4547,6 +4654,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4619,6 +4727,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4675,6 +4784,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4731,6 +4841,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4803,6 +4914,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4859,6 +4971,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4915,6 +5028,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -4980,6 +5094,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5036,6 +5151,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5092,6 +5208,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5148,6 +5265,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5204,6 +5322,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5260,6 +5379,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5316,6 +5436,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5372,6 +5493,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5428,6 +5550,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5484,6 +5607,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [],
    "startDate": null,
@@ -5572,6 +5696,7 @@
     "Pradeep Kumar"
    ],
    "dev": [],
+   "clientOwner": [],
    "milestone": [],
    "releasedTo": [
     "All DC"
