@@ -2329,7 +2329,7 @@
    "module": "Task Core",
    "phase": "Working on",
    "status": "Testing",
-   "priority": "P1 - High",
+   "priority": "P0 - Critical",
    "source": "Customer Requirement",
    "pm": [
     "Pradeep Kumar"
@@ -2388,10 +2388,18 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-16T08:42:50.972Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P1 - High",
+     "to": "P0 - Critical"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:48.572Z",
+   "updatedAt": "2026-11-16T08:42:50.972Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
