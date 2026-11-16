@@ -5525,7 +5525,7 @@
    "phase": "Ideas / Backlog",
    "status": "Idea",
    "priority": null,
-   "source": null,
+   "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
    ],
@@ -5569,10 +5569,18 @@
      "field": "PM / Analyst",
      "from": "Madhumitha Krishnamurthi, Pradeep Kumar",
      "to": "Pradeep Kumar"
+    },
+    {
+     "at": "2026-11-16T11:34:18.699Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Requirement Source",
+     "from": "(empty)",
+     "to": "Support Ticket"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:07:44.177Z",
+   "updatedAt": "2026-11-16T11:34:18.699Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
