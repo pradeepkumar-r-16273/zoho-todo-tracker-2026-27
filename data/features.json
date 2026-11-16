@@ -1453,7 +1453,7 @@
    "phase": "Released",
    "status": "Released",
    "priority": "P2 - Medium",
-   "source": null,
+   "source": "Internal Feedback",
    "pm": [
     "Gayathri K"
    ],
@@ -1491,10 +1491,18 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-16T08:38:07.106Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Requirement Source",
+     "from": "(empty)",
+     "to": "Internal Feedback"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:36.439Z",
+   "updatedAt": "2026-11-16T08:38:07.106Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
