@@ -3177,7 +3177,7 @@
    "module": "Task Core",
    "phase": "Roadmap",
    "status": "Yet to Start",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Competitive Study",
    "pm": [],
    "dev": [],
@@ -3204,11 +3204,19 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    },
+    {
+     "at": "2026-11-16T08:43:44.924Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-16T08:43:44.924Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-045",
