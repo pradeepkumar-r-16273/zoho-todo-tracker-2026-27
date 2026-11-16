@@ -6257,7 +6257,7 @@
    "phase": "Ideas / Backlog",
    "status": "Idea",
    "priority": null,
-   "source": null,
+   "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
    ],
@@ -6301,10 +6301,18 @@
      "field": "PM / Analyst",
      "from": "Madhumitha Krishnamurthi, Pradeep Kumar",
      "to": "Pradeep Kumar"
+    },
+    {
+     "at": "2026-11-16T11:35:29.316Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Requirement Source",
+     "from": "(empty)",
+     "to": "Internal Feedback"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:08:16.298Z",
+   "updatedAt": "2026-11-16T11:35:29.316Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
