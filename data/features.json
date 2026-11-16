@@ -1394,7 +1394,7 @@
    "phase": "Released",
    "status": "Released",
    "priority": "P1 - High",
-   "source": null,
+   "source": "Competitive Study",
    "pm": [
     "Gayathri K"
    ],
@@ -1432,10 +1432,18 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-16T08:38:01.089Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Requirement Source",
+     "from": "(empty)",
+     "to": "Competitive Study"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:32.547Z",
+   "updatedAt": "2026-11-16T08:38:01.089Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
