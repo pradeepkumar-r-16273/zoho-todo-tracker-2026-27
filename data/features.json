@@ -6252,7 +6252,26 @@
    "updatedBy": "Pradeep Kumar"
   }
  ],
- "views": [],
+ "views": [
+  {
+   "id": "tv-mwj1f6c38htz",
+   "name": "Current Status ",
+   "type": "grid",
+   "filters": [],
+   "sorts": [],
+   "groupBy": "status",
+   "hidden": [
+    "startDate",
+    "targetDate",
+    "sourceNote",
+    "mobile",
+    "html"
+   ],
+   "kanbanBy": null,
+   "zoom": null,
+   "widths": {}
+  }
+ ],
  "milestones": [
   {
    "name": "M287",
