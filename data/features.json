@@ -6275,8 +6275,8 @@
    "attachments": [],
    "comments": [],
    "analysis": "Done",
-   "design": null,
-   "html": null,
+   "design": "In Progress",
+   "html": "In Pipeline",
    "server": null,
    "client": null,
    "testing": null,
@@ -6359,9 +6359,25 @@
      "field": "Analysis",
      "from": "(empty)",
      "to": "Done"
+    },
+    {
+     "at": "2026-11-16T09:17:56.102Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Design",
+     "from": "(empty)",
+     "to": "In Progress"
+    },
+    {
+     "at": "2026-11-16T09:17:58.452Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "HTML",
+     "from": "(empty)",
+     "to": "In Pipeline"
     }
    ],
-   "updatedAt": "2026-11-16T09:17:53.868Z",
+   "updatedAt": "2026-11-16T09:17:58.452Z",
    "createdAt": "2026-11-16T09:15:34.467Z",
    "updatedBy": "Pradeep Kumar",
    "clientOwner": [
