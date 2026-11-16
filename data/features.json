@@ -3813,7 +3813,7 @@
    "phase": "Pipeline",
    "status": "Yet to Start",
    "priority": null,
-   "source": null,
+   "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
    ],
@@ -3841,11 +3841,19 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    },
+    {
+     "at": "2026-11-16T11:31:15.767Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Requirement Source",
+     "from": "(empty)",
+     "to": "Support Ticket"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-16T11:31:15.767Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-058",
