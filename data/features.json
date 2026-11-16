@@ -4357,7 +4357,7 @@
    "phase": "Pipeline",
    "status": "Yet to Start",
    "priority": null,
-   "source": null,
+   "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
    ],
@@ -4393,10 +4393,18 @@
      "field": "PM / Analyst",
      "from": "(empty)",
      "to": "Pradeep Kumar"
+    },
+    {
+     "at": "2026-11-16T11:32:18.816Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Requirement Source",
+     "from": "(empty)",
+     "to": "Support Ticket"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:06:08.794Z",
+   "updatedAt": "2026-11-16T11:32:18.816Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
