@@ -5460,7 +5460,7 @@
    "phase": "Ideas / Backlog",
    "status": "Idea",
    "priority": null,
-   "source": null,
+   "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
    ],
@@ -5504,10 +5504,18 @@
      "field": "PM / Analyst",
      "from": "Madhumitha Krishnamurthi, Pradeep Kumar",
      "to": "Pradeep Kumar"
+    },
+    {
+     "at": "2026-11-16T11:34:15.582Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Requirement Source",
+     "from": "(empty)",
+     "to": "Competitive Study"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:07:40.281Z",
+   "updatedAt": "2026-11-16T11:34:15.582Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
