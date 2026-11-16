@@ -6254,7 +6254,7 @@
   {
    "id": "TD-101",
    "name": "LHS - Sort/Pinned Enhancements",
-   "module": null,
+   "module": "Task Core",
    "phase": "Pipeline",
    "status": "Yet to Start",
    "priority": null,
@@ -6293,9 +6293,17 @@
      "field": "Feature",
      "from": "Untitled feature",
      "to": "LHS - Sort/Pinned Enhancements"
+    },
+    {
+     "at": "2026-11-16T09:15:59.615Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Module",
+     "from": "(empty)",
+     "to": "Task Core"
     }
    ],
-   "updatedAt": "2026-11-16T09:15:53.455Z",
+   "updatedAt": "2026-11-16T09:15:59.615Z",
    "createdAt": "2026-11-16T09:15:34.467Z",
    "updatedBy": "Pradeep Kumar"
   }
