@@ -4855,7 +4855,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Testing",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": null,
    "pm": [
     "Pradeep Kumar"
@@ -4972,10 +4972,18 @@
      "field": "Status",
      "from": "Released",
      "to": "Testing"
+    },
+    {
+     "at": "2026-11-16T09:21:25.063Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:55:15.729Z",
+   "updatedAt": "2026-11-16T09:21:25.063Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
