@@ -6253,7 +6253,7 @@
   },
   {
    "id": "TD-101",
-   "name": "Untitled feature",
+   "name": "LHS - Sort/Pinned Enhancements",
    "module": null,
    "phase": "Pipeline",
    "status": "Yet to Start",
@@ -6285,9 +6285,17 @@
      "by": "Pradeep Kumar",
      "action": "created",
      "detail": "Created in tracker"
+    },
+    {
+     "at": "2026-11-16T09:15:53.455Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Feature",
+     "from": "Untitled feature",
+     "to": "LHS - Sort/Pinned Enhancements"
     }
    ],
-   "updatedAt": "2026-11-16T09:15:34.467Z",
+   "updatedAt": "2026-11-16T09:15:53.455Z",
    "createdAt": "2026-11-16T09:15:34.467Z",
    "updatedBy": "Pradeep Kumar"
   }
