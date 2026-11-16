@@ -85,8 +85,15 @@ function progress(r) {
   STAGE_IDS.forEach((k) => { const v = r[k]; if (!v || v === "N/A") return; n++; s += v === "Done" ? 1 : v === "In Progress" ? 0.5 : 0; });
   return n ? Math.round((s / n) * 100) : null;
 }
+function releaseStatus(r) {
+  const rt = r.releasedTo || [];
+  if (rt.includes("All DC")) return "All DC Released";
+  if (rt.length) return "Partially Released";
+  return "Not Released";
+}
 function val(r, fid) {
   if (fid === "progress") return progress(r);
+  if (fid === "allReleasedStatus") return releaseStatus(r);
   if (fid === "_comments") return (r.comments || []).length;
   if (fid === "_attachments") return (r.attachments || []).length;
   if (fid === "_updated") return r.updatedAt;
@@ -103,6 +110,10 @@ const PRESETS = [
   { id: "v-released", name: "Released", type: "grid", groupBy: "module", filters: [{ f: "phase", op: "any", v: ["Released"] }], sorts: [], hidden: ["priority", "milestone", "startDate", "targetDate", "sourceNote"] },
   { id: "v-ideas", name: "Ideas / Backlog", type: "grid", groupBy: "module", filters: [{ f: "phase", op: "any", v: ["Ideas / Backlog"] }], sorts: [], hidden: STAGE_IDS.concat(["releasedTo", "milestone", "dev", "progress"]) },
   { id: "v-mine", name: "My items", type: "grid", groupBy: "phase", filters: [{ f: "_mine", op: "me", v: null }], sorts: [], hidden: ["sourceNote"] },
+  { id: "v-dcpending", name: "All DC Release pending", type: "grid", groupBy: "module", filters: [{ f: "phase", op: "any", v: ["Released"] }, { f: "releasedTo", op: "none", v: ["All DC"] }], sorts: [], hidden: ["sourceNote", "startDate", "targetDate", "mobile", "html"] },
+  { id: "v-readyrelease", name: "Ready for release", type: "grid", groupBy: "status", filters: [{ f: "status", op: "any", v: ["Releasing", "Testing"] }], sorts: [], hidden: ["sourceNote", "startDate", "targetDate", "mobile", "html"] },
+  { id: "v-clientowner", name: "Client owner", type: "grid", groupBy: "clientOwner", filters: [], sorts: [], hidden: ["sourceNote", "startDate", "targetDate", "mobile", "html"] },
+  { id: "v-serverowner", name: "Server owner", type: "grid", groupBy: "dev", filters: [], sorts: [], hidden: ["sourceNote", "startDate", "targetDate", "mobile", "html"] },
   { id: "k-status", name: "Board by status", type: "kanban", kanbanBy: "status", filters: [{ f: "phase", op: "none", v: ["Ideas / Backlog"] }], sorts: [] },
   { id: "k-milestone", name: "Board by milestone", type: "kanban", kanbanBy: "milestone", filters: [], sorts: [] },
   { id: "k-module", name: "Board by module", type: "kanban", kanbanBy: "module", filters: [], sorts: [] },
@@ -315,6 +326,7 @@ function editText(anchor, r, f) {
 }
 /* open the right editor for a field */
 function editField(anchor, r, f) {
+  if (f && f.readonly) return;
   if (!store.canEdit) { readonlyNotice(); return; }
   if (f.type === "singleSelect" || f.type === "multiSelect" || f.type === "people") pickOptions(anchor, f, r[f.id], (v) => setField(r.id, f.id, v));
   else if (f.type === "longText") editLong(anchor, r, f);
@@ -505,7 +517,7 @@ function renderGrid() {
     g.rows.forEach((r) => {
       n++;
       html += `<tr data-id="${r.id}"><td class="rn"><span class="num">${esc(r.id.replace("TD-", ""))}</span><button class="exp" data-exp="${r.id}" title="Expand record">${ic("expand")}</button></td>`
-        + fields.map((f) => `<td class="${f.primary ? "pri" : ""} ${f.type === "formula" || f.type === "sys" ? "ro" : ""}" data-f="${f.id}">${cellHTML(r, f)}</td>`).join("") + "</tr>";
+        + fields.map((f) => `<td class="${f.primary ? "pri" : ""} ${f.type === "formula" || f.type === "sys" || f.readonly ? "ro" : ""}" data-f="${f.id}">${cellHTML(r, f)}</td>`).join("") + "</tr>";
     });
     if (store.canEdit) html += `<tr class="addrow" data-addgrp="${esc(gkey)}"><td class="rn">${ic("plus")}</td><td colspan="${fields.length}">Add feature${g.key ? " to " + esc(g.key) : ""}</td></tr>`;
   });
@@ -536,7 +548,7 @@ function gridClick(e) {
 function headerMenu(th, f) {
   const sortable = f.type !== "longText";
   const groupable = ["singleSelect", "multiSelect", "people"].includes(f.type);
-  const el = openPop(th, `${sortable ? `<div class="opt" data-a="asc">${ic("up")}Sort first &rarr; last</div><div class="opt" data-a="desc">${ic("down")}Sort last &rarr; first</div>` : ""}${groupable ? `<div class="opt" data-a="group">${ic("group")}Group by this field</div>` : ""}${f.type !== "sys" && f.type !== "checklist" ? `<div class="opt" data-a="filter">${ic("filter")}Filter by this field</div>` : ""}${!f.primary ? `<div class="opt" data-a="hide">${ic("eye")}Hide field</div>` : ""}${store.canEdit && f.type !== "sys" && f.type !== "formula" ? `<div class="opt" data-a="edit">${ic("gear")}Edit field</div>` : ""}`);
+  const el = openPop(th, `${sortable ? `<div class="opt" data-a="asc">${ic("up")}Sort first &rarr; last</div><div class="opt" data-a="desc">${ic("down")}Sort last &rarr; first</div>` : ""}${groupable ? `<div class="opt" data-a="group">${ic("group")}Group by this field</div>` : ""}${f.type !== "sys" && f.type !== "checklist" ? `<div class="opt" data-a="filter">${ic("filter")}Filter by this field</div>` : ""}${!f.primary ? `<div class="opt" data-a="hide">${ic("eye")}Hide field</div>` : ""}${store.canEdit && f.type !== "sys" && f.type !== "formula" && !f.readonly ? `<div class="opt" data-a="edit">${ic("gear")}Edit field</div>` : ""}`);
   el.addEventListener("click", (e) => {
     const a = (e.target.closest("[data-a]") || {}).dataset; if (!a) return;
     const v = S.view;
@@ -562,7 +574,7 @@ function gridKeys(e) {
   const r = R(S.sel.id), f = F(S.sel.f), td = markSel();
   if (e.key === "Enter") { e.preventDefault(); if (e.shiftKey) openDrawer(r.id); else editField(td, r, f); }
   else if (e.key === "Escape") { S.sel = null; markSel(); }
-  else if ((e.key === "Delete" || e.key === "Backspace") && store.canEdit && !["formula", "sys", "checklist"].includes(f.type) && !f.primary) setField(r.id, f.id, f.type === "multiSelect" || f.type === "people" ? [] : null);
+  else if ((e.key === "Delete" || e.key === "Backspace") && store.canEdit && !["formula", "sys", "checklist"].includes(f.type) && !f.readonly && !f.primary) setField(r.id, f.id, f.type === "multiSelect" || f.type === "people" ? [] : null);
   else if (e.key.length === 1 && !e.ctrlKey && !e.metaKey && (f.type === "text") && store.canEdit) { editText(td, r, f); const i = $(".pop input"); if (i) { i.value = e.key; } e.preventDefault(); }
 }
 /* column resize */
@@ -627,7 +639,7 @@ function renderDrawer() {
 function drawerDetails(r) {
   const fs = db().schema;
   const row = (f) => {
-    const ro = !store.canEdit || f.type === "formula";
+    const ro = !store.canEdit || f.type === "formula" || f.readonly;
     const inner = f.type === "longText" ? (r[f.id] ? esc(r[f.id]) : '<span class="muted">Add notes...</span>') : (cellHTML(r, f) || '<span class="muted">-</span>');
     return `<div class="lab">${ic(TYPE_IC[f.type] || "text")}${esc(f.name)}</div><div class="val ${f.type === "longText" ? "long" : ""} ${ro ? "ro" : ""}" data-df="${f.id}">${inner}</div>`;
   };
