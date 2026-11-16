@@ -6620,46 +6620,6 @@
    "updatedBy": "Pradeep Kumar"
   },
   {
-   "id": "TD-100",
-   "name": "Untitled feature",
-   "module": null,
-   "phase": "Pipeline",
-   "status": "Yet to Start",
-   "priority": null,
-   "source": null,
-   "pm": [
-    "Pradeep Kumar"
-   ],
-   "dev": [],
-   "milestone": [],
-   "releasedTo": [],
-   "startDate": null,
-   "targetDate": null,
-   "notes": "",
-   "sourceNote": "Added in tracker",
-   "subitems": [],
-   "attachments": [],
-   "comments": [],
-   "analysis": null,
-   "design": null,
-   "html": null,
-   "server": null,
-   "client": null,
-   "testing": null,
-   "mobile": null,
-   "history": [
-    {
-     "at": "2026-11-16T08:55:36.992Z",
-     "by": "Pradeep Kumar",
-     "action": "created",
-     "detail": "Created in tracker"
-    }
-   ],
-   "updatedAt": "2026-11-16T08:55:36.992Z",
-   "createdAt": "2026-11-16T08:55:36.992Z",
-   "updatedBy": "Pradeep Kumar"
-  },
-  {
    "id": "TD-101",
    "name": "LHS - Sort/Pinned Enhancements",
    "module": "Task Core",
@@ -7009,6 +6969,51 @@
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
    "updatedAt": "2026-11-13T11:02:06.312Z",
+   "updatedBy": "Pradeep Kumar"
+  },
+  {
+   "id": "TD-100",
+   "name": "Untitled feature",
+   "module": null,
+   "phase": "Pipeline",
+   "status": "Yet to Start",
+   "priority": null,
+   "source": null,
+   "pm": [
+    "Pradeep Kumar"
+   ],
+   "dev": [],
+   "milestone": [],
+   "releasedTo": [],
+   "startDate": null,
+   "targetDate": null,
+   "notes": "",
+   "sourceNote": "Added in tracker",
+   "subitems": [],
+   "attachments": [],
+   "comments": [],
+   "analysis": null,
+   "design": null,
+   "html": null,
+   "server": null,
+   "client": null,
+   "testing": null,
+   "mobile": null,
+   "history": [
+    {
+     "at": "2026-11-16T08:55:36.992Z",
+     "by": "Pradeep Kumar",
+     "action": "created",
+     "detail": "Created in tracker"
+    },
+    {
+     "at": "2026-11-16T11:36:14.752Z",
+     "by": "Pradeep Kumar",
+     "action": "deleted"
+    }
+   ],
+   "updatedAt": "2026-11-16T11:36:14.752Z",
+   "createdAt": "2026-11-16T08:55:36.992Z",
    "updatedBy": "Pradeep Kumar"
   }
  ]
