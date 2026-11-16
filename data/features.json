@@ -1987,7 +1987,7 @@
    "module": "AI",
    "phase": "Working on",
    "status": "In Progress",
-   "priority": "P2 - Medium",
+   "priority": "P1 - High",
    "source": "Competitive Study",
    "pm": [
     "Gayathri K"
@@ -2028,10 +2028,18 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-16T08:42:15.706Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P2 - Medium",
+     "to": "P1 - High"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:12.905Z",
+   "updatedAt": "2026-11-16T08:42:15.706Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
