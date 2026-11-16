@@ -3177,7 +3177,7 @@
    "module": "Task Core",
    "phase": "Roadmap",
    "status": "Yet to Start",
-   "priority": "P1 - High",
+   "priority": "P2 - Medium",
    "source": "Competitive Study",
    "pm": [],
    "dev": [],
@@ -3212,10 +3212,18 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-16T08:43:47.041Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P1 - High",
+     "to": "P2 - Medium"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:44.924Z",
+   "updatedAt": "2026-11-16T08:43:47.041Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
