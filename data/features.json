@@ -1530,7 +1530,7 @@
    "module": "Task Core",
    "phase": "Released",
    "status": "Released",
-   "priority": null,
+   "priority": "P1 - High",
    "source": null,
    "pm": [
     "Pradeep Kumar"
@@ -1585,10 +1585,18 @@
      "field": "Released To (DC)",
      "from": "(empty)",
      "to": "All DC"
+    },
+    {
+     "at": "2026-11-16T08:37:42.656Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:35:55.943Z",
+   "updatedAt": "2026-11-16T08:37:42.656Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
