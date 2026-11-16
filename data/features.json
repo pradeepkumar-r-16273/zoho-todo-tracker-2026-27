@@ -6277,7 +6277,7 @@
    "analysis": "Done",
    "design": "In Progress",
    "html": "In Pipeline",
-   "server": null,
+   "server": "Not Started",
    "client": null,
    "testing": null,
    "mobile": null,
@@ -6375,9 +6375,17 @@
      "field": "HTML",
      "from": "(empty)",
      "to": "In Pipeline"
+    },
+    {
+     "at": "2026-11-16T09:18:00.369Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Server",
+     "from": "(empty)",
+     "to": "Not Started"
     }
    ],
-   "updatedAt": "2026-11-16T09:17:58.452Z",
+   "updatedAt": "2026-11-16T09:18:00.369Z",
    "createdAt": "2026-11-16T09:15:34.467Z",
    "updatedBy": "Pradeep Kumar",
    "clientOwner": [
