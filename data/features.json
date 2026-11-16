@@ -809,7 +809,7 @@
    "module": "Task Core",
    "phase": "Released",
    "status": "Released",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Gayathri K"
@@ -840,11 +840,19 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    },
+    {
+     "at": "2026-11-16T08:37:08.926Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-16T08:37:08.926Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-003",
