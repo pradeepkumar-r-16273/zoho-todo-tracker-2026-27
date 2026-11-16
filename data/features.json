@@ -6274,7 +6274,7 @@
    "subitems": [],
    "attachments": [],
    "comments": [],
-   "analysis": null,
+   "analysis": "Done",
    "design": null,
    "html": null,
    "server": null,
@@ -6351,9 +6351,17 @@
      "field": "Client Owner",
      "from": "(empty)",
      "to": "Vasanthakumar V"
+    },
+    {
+     "at": "2026-11-16T09:17:53.868Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Analysis",
+     "from": "(empty)",
+     "to": "Done"
     }
    ],
-   "updatedAt": "2026-11-16T09:17:39.981Z",
+   "updatedAt": "2026-11-16T09:17:53.868Z",
    "createdAt": "2026-11-16T09:15:34.467Z",
    "updatedBy": "Pradeep Kumar",
    "clientOwner": [
