@@ -6343,11 +6343,22 @@
      "field": "Server Owner",
      "from": "(empty)",
      "to": "Vignesh R"
+    },
+    {
+     "at": "2026-11-16T09:17:39.981Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Client Owner",
+     "from": "(empty)",
+     "to": "Vasanthakumar V"
     }
    ],
-   "updatedAt": "2026-11-16T09:17:35.252Z",
+   "updatedAt": "2026-11-16T09:17:39.981Z",
    "createdAt": "2026-11-16T09:15:34.467Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedBy": "Pradeep Kumar",
+   "clientOwner": [
+    "Vasanthakumar V"
+   ]
   }
  ],
  "views": [
