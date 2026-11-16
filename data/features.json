@@ -3489,7 +3489,7 @@
    "phase": "Pipeline",
    "status": "On Hold",
    "priority": null,
-   "source": null,
+   "source": "Internal Feedback",
    "pm": [
     "Gayathri K"
    ],
@@ -3517,11 +3517,19 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Gayathri work items (03 Nov 2026)"
+    },
+    {
+     "at": "2026-11-16T11:30:29.717Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Requirement Source",
+     "from": "(empty)",
+     "to": "Internal Feedback"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-16T11:30:29.717Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-052",
