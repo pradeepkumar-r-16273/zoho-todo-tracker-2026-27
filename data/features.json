@@ -3608,7 +3608,7 @@
    "analysis": "Done",
    "design": "N/A",
    "html": null,
-   "server": "In Progress",
+   "server": "Done",
    "client": null,
    "testing": null,
    "mobile": null,
@@ -3659,10 +3659,18 @@
      "field": "Design",
      "from": "(empty)",
      "to": "N/A"
+    },
+    {
+     "at": "2026-11-20T05:43:47.337Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Server",
+     "from": "In Progress",
+     "to": "Done"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-20T05:43:45.164Z",
+   "updatedAt": "2026-11-20T05:43:47.337Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
