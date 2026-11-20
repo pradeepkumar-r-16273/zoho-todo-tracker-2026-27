@@ -1899,8 +1899,6 @@
    ],
    "clientOwner": [],
    "milestone": [
-    "M291",
-    "M292",
     "M295"
    ],
    "releasedTo": [],
@@ -1953,10 +1951,26 @@
      "field": "Milestone",
      "from": "M291, M292",
      "to": "M291, M292, M295"
+    },
+    {
+     "at": "2026-11-20T05:43:03.598Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Milestone",
+     "from": "M291, M292, M295",
+     "to": "M292, M295"
+    },
+    {
+     "at": "2026-11-20T05:43:04.097Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Milestone",
+     "from": "M292, M295",
+     "to": "M295"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-20T05:42:59.305Z",
+   "updatedAt": "2026-11-20T05:43:04.097Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
