@@ -3605,7 +3605,7 @@
    "notes": "Central QA to enable for test account.",
    "sourceNote": "Server status for work items (15 Jul 2026, milestones to M293)",
    "subitems": [],
-   "analysis": null,
+   "analysis": "Done",
    "design": null,
    "html": null,
    "server": "In Progress",
@@ -3643,10 +3643,18 @@
      "field": "Milestone",
      "from": "M291, M295",
      "to": "M295"
+    },
+    {
+     "at": "2026-11-20T05:43:40.981Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Analysis",
+     "from": "(empty)",
+     "to": "Done"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-20T05:43:35.931Z",
+   "updatedAt": "2026-11-20T05:43:40.981Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
