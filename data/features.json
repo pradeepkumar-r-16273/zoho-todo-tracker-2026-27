@@ -3597,7 +3597,7 @@
    ],
    "clientOwner": [],
    "milestone": [
-    "M291"
+    "M295"
    ],
    "releasedTo": [],
    "startDate": null,
@@ -3627,11 +3627,27 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    },
+    {
+     "at": "2026-11-20T05:43:35.097Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Milestone",
+     "from": "M291",
+     "to": "M291, M295"
+    },
+    {
+     "at": "2026-11-20T05:43:35.931Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Milestone",
+     "from": "M291, M295",
+     "to": "M295"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-20T05:43:35.931Z",
+   "updatedBy": "Pradeep Kumar"
   },
   {
    "id": "TD-053",
