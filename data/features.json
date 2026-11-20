@@ -6920,6 +6920,35 @@
    "kanbanBy": null,
    "zoom": null,
    "widths": {}
+  },
+  {
+   "id": "tv-mwonhbt926cc",
+   "name": "Client pipeline ",
+   "type": "grid",
+   "filters": [
+    {
+     "f": "client",
+     "op": "any",
+     "v": [
+      "In Pipeline",
+      "In Progress",
+      "Not Started",
+      "On Hold"
+     ]
+    }
+   ],
+   "sorts": [],
+   "groupBy": null,
+   "hidden": [
+    "startDate",
+    "targetDate",
+    "sourceNote",
+    "mobile",
+    "html"
+   ],
+   "kanbanBy": null,
+   "zoom": null,
+   "widths": {}
   }
  ],
  "milestones": [
