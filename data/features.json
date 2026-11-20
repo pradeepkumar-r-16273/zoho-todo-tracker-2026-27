@@ -3609,7 +3609,7 @@
    "design": "N/A",
    "html": null,
    "server": "Done",
-   "client": null,
+   "client": "In Pipeline",
    "testing": null,
    "mobile": null,
    "attachments": [],
@@ -3667,10 +3667,18 @@
      "field": "Server",
      "from": "In Progress",
      "to": "Done"
+    },
+    {
+     "at": "2026-11-20T05:43:49.847Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Client",
+     "from": "(empty)",
+     "to": "In Pipeline"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-20T05:43:47.337Z",
+   "updatedAt": "2026-11-20T05:43:49.847Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
