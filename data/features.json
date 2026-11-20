@@ -1900,7 +1900,8 @@
    "clientOwner": [],
    "milestone": [
     "M291",
-    "M292"
+    "M292",
+    "M295"
    ],
    "releasedTo": [],
    "startDate": null,
@@ -1944,10 +1945,18 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-20T05:42:59.305Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Milestone",
+     "from": "M291, M292",
+     "to": "M291, M292, M295"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:05.456Z",
+   "updatedAt": "2026-11-20T05:42:59.305Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
