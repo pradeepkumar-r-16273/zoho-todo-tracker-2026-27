@@ -6892,6 +6892,34 @@
    "kanbanBy": null,
    "zoom": null,
    "widths": {}
+  },
+  {
+   "id": "tv-mwongbl5wzkp",
+   "name": "Server pipeline ",
+   "type": "grid",
+   "filters": [
+    {
+     "f": "server",
+     "op": "any",
+     "v": [
+      "In Progress",
+      "In Pipeline",
+      "On Hold"
+     ]
+    }
+   ],
+   "sorts": [],
+   "groupBy": null,
+   "hidden": [
+    "startDate",
+    "targetDate",
+    "sourceNote",
+    "mobile",
+    "html"
+   ],
+   "kanbanBy": null,
+   "zoom": null,
+   "widths": {}
   }
  ],
  "milestones": [
