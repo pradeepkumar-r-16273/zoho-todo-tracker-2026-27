@@ -685,6 +685,74 @@
      "color": "yellow"
     }
    ]
+  },
+  {
+   "id": "cf_matrix_quadrant",
+   "name": "Matrix quadrant",
+   "type": "singleSelect",
+   "width": 140,
+   "options": [
+    {
+     "name": "Ship now",
+     "color": "green"
+    },
+    {
+     "name": "Big bets",
+     "color": "blue"
+    },
+    {
+     "name": "Fill-ins",
+     "color": "gray"
+    },
+    {
+     "name": "Prove first",
+     "color": "yellow"
+    }
+   ]
+  },
+  {
+   "id": "cf_segment",
+   "name": "Segment",
+   "type": "singleSelect",
+   "width": 150,
+   "options": [
+    {
+     "name": "AI reporting",
+     "color": "purple"
+    },
+    {
+     "name": "Automation",
+     "color": "blue"
+    },
+    {
+     "name": "Calendar",
+     "color": "green"
+    },
+    {
+     "name": "Capture and views",
+     "color": "cyan"
+    },
+    {
+     "name": "Delight",
+     "color": "pink"
+    },
+    {
+     "name": "Hygiene",
+     "color": "gray"
+    },
+    {
+     "name": "Integrations",
+     "color": "teal"
+    },
+    {
+     "name": "Mobile",
+     "color": "orange"
+    },
+    {
+     "name": "Team control",
+     "color": "red"
+    }
+   ]
   }
  ],
  "people": [
@@ -797,11 +865,20 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "AI reporting"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:04.993Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "AI reporting"
   },
   {
    "id": "TD-002",
@@ -848,11 +925,20 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:08.926Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-003",
@@ -912,11 +998,20 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:12.080Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-004",
@@ -967,11 +1062,20 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:14.055Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-005",
@@ -1031,11 +1135,20 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:16.522Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-006",
@@ -1091,11 +1204,20 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:18.672Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-007",
@@ -1142,11 +1264,20 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:21.630Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-008",
@@ -1212,11 +1343,20 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Automation"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:23.656Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Automation"
   },
   {
    "id": "TD-009",
@@ -1263,11 +1403,20 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:25.930Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-010",
@@ -1322,11 +1471,20 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Customer Requirement"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:53.706Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-011",
@@ -1381,11 +1539,20 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Customer Requirement"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:37:55.839Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-012",
@@ -1440,11 +1607,20 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:38:01.089Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-013",
@@ -1499,11 +1675,20 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:38:07.106Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-014",
@@ -1558,11 +1743,20 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:38:11.072Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-016",
@@ -1641,11 +1835,20 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:38:13.322Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-017",
@@ -1720,11 +1923,20 @@
      "field": "Released To (DC)",
      "from": "(empty)",
      "to": "All DC"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Hygiene"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-18T06:15:10.449Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Hygiene"
   },
   {
    "id": "TD-020",
@@ -1791,11 +2003,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:41:58.023Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-021",
@@ -1877,11 +2107,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:00.562Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-022",
@@ -1967,11 +2215,29 @@
      "field": "Milestone",
      "from": "M292, M295",
      "to": "M295"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-20T05:43:04.097Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-023",
@@ -2016,11 +2282,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:09.005Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-024",
@@ -2077,11 +2361,29 @@
      "field": "Priority",
      "from": "P2 - Medium",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "AI reporting"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:15.706Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "AI reporting"
   },
   {
    "id": "TD-025",
@@ -2140,11 +2442,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "AI reporting"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:35.055Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "AI reporting"
   },
   {
    "id": "TD-026",
@@ -2189,11 +2509,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:37.538Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-027",
@@ -2251,11 +2589,29 @@
      "field": "Priority",
      "from": "P1 - High",
      "to": "P0 - Critical"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Automation"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:41.196Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Automation"
   },
   {
    "id": "TD-028",
@@ -2263,7 +2619,7 @@
    "module": "AI",
    "phase": "Working on",
    "status": "In Progress",
-   "priority": "P0 - Critical",
+   "priority": "P1 - High",
    "source": "Competitive Study",
    "pm": [
     "Gayathri K"
@@ -2300,11 +2656,37 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P0 - Critical"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P0 - Critical",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "AI reporting"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:43.122Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "AI reporting"
   },
   {
    "id": "TD-029",
@@ -2358,11 +2740,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:45.956Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-030",
@@ -2370,7 +2770,7 @@
    "module": "Task Core",
    "phase": "Working on",
    "status": "Testing",
-   "priority": "P0 - Critical",
+   "priority": "P1 - High",
    "source": "Customer Requirement",
    "pm": [
     "Pradeep Kumar"
@@ -2445,11 +2845,37 @@
      "field": "Server",
      "from": "In Progress",
      "to": "Done"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P0 - Critical",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Automation"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T09:35:06.361Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Automation"
   },
   {
    "id": "TD-031",
@@ -2514,11 +2940,29 @@
      "field": "Design",
      "from": "(empty)",
      "to": "Done"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T09:34:59.841Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-032",
@@ -2572,11 +3016,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:56.690Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-033",
@@ -2629,11 +3091,29 @@
      "field": "Priority",
      "from": "P1 - High",
      "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:02.495Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-034",
@@ -2789,11 +3269,29 @@
      "field": "Server Owner",
      "from": "Sankar, Sivasankari P",
      "to": "Sivasankari P"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T10:15:46.719Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-035",
@@ -2843,11 +3341,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P0 - Critical"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Automation"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:07.056Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Automation"
   },
   {
    "id": "TD-036",
@@ -2892,11 +3408,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Automation"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:09.841Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Automation"
   },
   {
    "id": "TD-037",
@@ -2941,11 +3475,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P0 - Critical"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Team control"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:12.439Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Team control"
   },
   {
    "id": "TD-038",
@@ -2990,11 +3542,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P0 - Critical"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Team control"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:14.508Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Team control"
   },
   {
    "id": "TD-039",
@@ -3058,11 +3628,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:18.123Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-040",
@@ -3107,11 +3695,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Calendar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:26.324Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Calendar"
   },
   {
    "id": "TD-041",
@@ -3119,7 +3725,7 @@
    "module": "Task Views",
    "phase": "Roadmap",
    "status": "In Design",
-   "priority": "P0 - Critical",
+   "priority": "P1 - High",
    "source": "Competitive Study",
    "pm": [
     "Gayathri K"
@@ -3164,11 +3770,37 @@
      "field": "Priority",
      "from": "P1 - High",
      "to": "P0 - Critical"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P0 - Critical",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Calendar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:30.223Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Calendar"
   },
   {
    "id": "TD-042",
@@ -3213,11 +3845,29 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:33.272Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-043",
@@ -3225,7 +3875,7 @@
    "module": "Task Core",
    "phase": "Roadmap",
    "status": "Analysis Done",
-   "priority": "P2 - Medium",
+   "priority": "P3 - Low",
    "source": "Customer Requirement",
    "pm": [
     "Pradeep Kumar"
@@ -3262,11 +3912,37 @@
      "field": "Priority",
      "from": "(empty)",
      "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P2 - Medium",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:36.622Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-044",
@@ -3274,7 +3950,7 @@
    "module": "Task Core",
    "phase": "Roadmap",
    "status": "Yet to Start",
-   "priority": "P1 - High",
+   "priority": "P2 - Medium",
    "source": "Competitive Study",
    "pm": [],
    "dev": [],
@@ -3325,11 +4001,37 @@
      "field": "Priority",
      "from": "P2 - Medium",
      "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P1 - High",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "AI reporting"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:43:50.124Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "AI reporting"
   },
   {
    "id": "TD-045",
@@ -3337,7 +4039,7 @@
    "module": "Mail Integration",
    "phase": "Roadmap",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -3366,11 +4068,37 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-046",
@@ -3378,7 +4106,7 @@
    "module": "Integrations",
    "phase": "Roadmap",
    "status": "On Hold",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Customer Requirement",
    "pm": [
     "Pradeep Kumar"
@@ -3407,11 +4135,37 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-047",
@@ -3419,7 +4173,7 @@
    "module": "Task Core",
    "phase": "Roadmap",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -3448,11 +4202,37 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Team control"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Team control"
   },
   {
    "id": "TD-048",
@@ -3460,7 +4240,7 @@
    "module": "AI",
    "phase": "Roadmap",
    "status": "In Pipeline",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Competitive Study",
    "pm": [
     "Gayathri K"
@@ -3489,11 +4269,37 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "AI reporting"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "AI reporting"
   },
   {
    "id": "TD-049",
@@ -3501,7 +4307,7 @@
    "module": "Task Core",
    "phase": "Roadmap",
    "status": "In Design",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Gayathri K"
@@ -3530,11 +4336,37 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-050",
@@ -3573,11 +4405,29 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Roadmap & Work Items post (Gayathri, 04 Nov 2026)"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-051",
@@ -3585,7 +4435,7 @@
    "module": "AI",
    "phase": "Pipeline",
    "status": "On Hold",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Support Ticket",
    "pm": [
     "Gayathri K"
@@ -3630,11 +4480,37 @@
      "field": "Requirement Source",
      "from": "Internal Feedback",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "AI reporting"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:30:32.251Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "AI reporting"
   },
   {
    "id": "TD-052",
@@ -3642,7 +4518,7 @@
    "module": "Platform",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Gayathri K",
@@ -3739,11 +4615,37 @@
      "field": "Testing",
      "from": "(empty)",
      "to": "In Pipeline"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Hygiene"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-20T05:43:52.681Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Hygiene"
   },
   {
    "id": "TD-053",
@@ -3751,7 +4653,7 @@
    "module": "Platform",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -3806,11 +4708,37 @@
      "field": "Requirement Source",
      "from": "Internal Feedback",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Hygiene"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:30:43.751Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Hygiene"
   },
   {
    "id": "TD-054",
@@ -3818,7 +4746,7 @@
    "module": "Task Core",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -3863,11 +4791,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Calendar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:30:47.884Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Calendar"
   },
   {
    "id": "TD-055",
@@ -3875,7 +4829,7 @@
    "module": "Issues / Tickets",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -3904,11 +4858,37 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Hygiene"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Hygiene"
   },
   {
    "id": "TD-056",
@@ -3916,7 +4896,7 @@
    "module": "Platform",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -3953,11 +4933,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Hygiene"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:30:57.583Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Hygiene"
   },
   {
    "id": "TD-057",
@@ -3965,7 +4971,7 @@
    "module": "Mobile",
    "phase": "Pipeline",
    "status": "Yet to Start",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -4002,11 +5008,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Calendar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:31:15.767Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Calendar"
   },
   {
    "id": "TD-058",
@@ -4014,7 +5046,7 @@
    "module": "Mobile",
    "phase": "Pipeline",
    "status": "Yet to Start",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -4043,11 +5075,37 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Pradeep work items - Oct 2026 update (27 Oct 2026)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Mobile"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Mobile"
   },
   {
    "id": "TD-059",
@@ -4055,7 +5113,7 @@
    "module": "Mobile",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -4092,11 +5150,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Mobile"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:31:21.066Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Mobile"
   },
   {
    "id": "TD-060",
@@ -4104,7 +5188,7 @@
    "module": "Mobile",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -4141,11 +5225,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Mobile"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:31:23.016Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Mobile"
   },
   {
    "id": "TD-061",
@@ -4153,7 +5263,7 @@
    "module": "Mobile",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -4190,11 +5300,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Mobile"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:31:25.749Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Mobile"
   },
   {
    "id": "TD-062",
@@ -4202,7 +5338,7 @@
    "module": "Task Core",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Support Ticket",
    "pm": [
     "Gayathri K"
@@ -4239,11 +5375,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:31:30.524Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-063",
@@ -4251,7 +5413,7 @@
    "module": "Task Views",
    "phase": "Pipeline",
    "status": "Yet to Start",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Internal Feedback",
    "pm": [
     "Gayathri K"
@@ -4301,11 +5463,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:31:44.307Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-064",
@@ -4313,7 +5501,7 @@
    "module": "Task Views",
    "phase": "Pipeline",
    "status": "On Hold",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Gayathri K"
@@ -4350,11 +5538,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:31:51.900Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-065",
@@ -4362,7 +5576,7 @@
    "module": "Task Views",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": null,
    "pm": [
     "Pradeep Kumar"
@@ -4391,11 +5605,37 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-066",
@@ -4403,7 +5643,7 @@
    "module": "Issues / Tickets",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -4432,11 +5672,37 @@
      "by": "Seed import",
      "action": "created",
      "detail": "Imported from: Server status for work items (15 Jul 2026, milestones to M293)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Hygiene"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T09:00:00+05:30",
-   "updatedBy": "Seed import"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Hygiene"
   },
   {
    "id": "TD-067",
@@ -4444,7 +5710,7 @@
    "module": "Issues / Tickets",
    "phase": "Pipeline",
    "status": "Yet to Start",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -4497,11 +5763,37 @@
      "field": "Requirement Source",
      "from": "Support Ticket",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Hygiene"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:32:11.999Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Hygiene"
   },
   {
    "id": "TD-068",
@@ -4509,7 +5801,7 @@
    "module": "Issues / Tickets",
    "phase": "Pipeline",
    "status": "Yet to Start",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -4554,11 +5846,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Hygiene"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:32:18.816Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Hygiene"
   },
   {
    "id": "TD-069",
@@ -4566,7 +5884,7 @@
    "module": "Issues / Tickets",
    "phase": "Pipeline",
    "status": "Yet to Start",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -4619,11 +5937,37 @@
      "field": "Requirement Source",
      "from": "Internal Feedback",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Hygiene"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:32:23.933Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Hygiene"
   },
   {
    "id": "TD-070",
@@ -4631,7 +5975,7 @@
    "module": "AI",
    "phase": "Pipeline",
    "status": "In Pipeline",
-   "priority": null,
+   "priority": "P1 - High",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -4676,11 +6020,37 @@
      "field": "Status",
      "from": "Yet to Start",
      "to": "In Pipeline"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T13:09:19.835Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-071",
@@ -4688,7 +6058,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -4741,11 +6111,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:32:27.916Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-072",
@@ -4753,7 +6149,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -4814,11 +6210,37 @@
      "field": "Requirement Source",
      "from": "Support Ticket",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:32:38.732Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-073",
@@ -4826,7 +6248,7 @@
    "module": "Task Views",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -4879,11 +6301,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:32:58.132Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-074",
@@ -4891,7 +6339,7 @@
    "module": "AI",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -4944,11 +6392,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:33:07.198Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-075",
@@ -4956,7 +6430,7 @@
    "module": "Task Views",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -5009,11 +6483,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:33:13.931Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Capture and views"
   },
   {
    "id": "TD-076",
@@ -5021,7 +6521,7 @@
    "module": "AI",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -5074,11 +6574,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "AI reporting"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:33:17.573Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "AI reporting"
   },
   {
    "id": "TD-077",
@@ -5086,7 +6612,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": null,
    "pm": [
     "Pradeep Kumar"
@@ -5163,11 +6689,37 @@
      "field": "Requirement Source",
      "from": "Internal Feedback",
      "to": "(empty)"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Team control"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:33:46.238Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Team control"
   },
   {
    "id": "TD-078",
@@ -5175,7 +6727,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P0 - Critical",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -5236,11 +6788,37 @@
      "field": "Requirement Source",
      "from": "Support Ticket",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P0 - Critical"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Automation"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:33:51.881Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Automation"
   },
   {
    "id": "TD-080",
@@ -5381,11 +6959,29 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Calendar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:34:03.900Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Calendar"
   },
   {
    "id": "TD-081",
@@ -5393,7 +6989,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -5454,11 +7050,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Calendar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:34:00.564Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Calendar"
   },
   {
    "id": "TD-082",
@@ -5466,7 +7088,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -5519,11 +7141,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Delight"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:34:06.583Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Delight"
   },
   {
    "id": "TD-083",
@@ -5531,7 +7179,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -5600,11 +7248,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Delight"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:34:10.617Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Delight"
   },
   {
    "id": "TD-084",
@@ -5612,7 +7286,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -5665,11 +7339,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Delight"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:34:15.582Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Delight"
   },
   {
    "id": "TD-085",
@@ -5677,7 +7377,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -5730,11 +7430,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Support Ticket"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Fill-ins"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Delight"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:34:18.699Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Fill-ins",
+   "cf_segment": "Delight"
   },
   {
    "id": "TD-086",
@@ -5742,7 +7468,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -5811,11 +7537,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Automation"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:34:22.299Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Automation"
   },
   {
    "id": "TD-087",
@@ -5823,7 +7575,7 @@
    "module": "Task Core",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -5876,11 +7628,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Team control"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:34:28.133Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Team control"
   },
   {
    "id": "TD-088",
@@ -5888,7 +7666,7 @@
    "module": "AI",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": null,
    "pm": [
     "Pradeep Kumar"
@@ -5933,11 +7711,37 @@
      "field": "PM / Analyst",
      "from": "Madhumitha Krishnamurthi, Pradeep Kumar",
      "to": "Pradeep Kumar"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "AI reporting"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-13T11:07:55.043Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "AI reporting"
   },
   {
    "id": "TD-089",
@@ -5945,7 +7749,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -6007,11 +7811,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:34:49.898Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-090",
@@ -6019,7 +7849,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -6072,11 +7902,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:00.482Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-091",
@@ -6084,7 +7940,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -6137,11 +7993,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:02.665Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-092",
@@ -6149,7 +8031,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -6202,11 +8084,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:05.281Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-093",
@@ -6214,7 +8122,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -6267,11 +8175,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:12.197Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-094",
@@ -6279,7 +8213,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -6332,11 +8266,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:16.397Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-095",
@@ -6344,7 +8304,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -6397,11 +8357,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:20.097Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-096",
@@ -6409,7 +8395,7 @@
    "module": "Integrations",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -6462,11 +8448,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:29.316Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-097",
@@ -6474,7 +8486,7 @@
    "module": "Platform",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -6527,11 +8539,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:32.666Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-098",
@@ -6539,7 +8577,7 @@
    "module": "Platform",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P3 - Low",
    "source": "Internal Feedback",
    "pm": [
     "Pradeep Kumar"
@@ -6592,11 +8630,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Internal Feedback"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P3 - Low"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Prove first"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Integrations"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:36.682Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Prove first",
+   "cf_segment": "Integrations"
   },
   {
    "id": "TD-099",
@@ -6604,7 +8668,7 @@
    "module": "Platform",
    "phase": "Ideas / Backlog",
    "status": "Idea",
-   "priority": null,
+   "priority": "P2 - Medium",
    "source": "Competitive Study",
    "pm": [
     "Pradeep Kumar"
@@ -6689,11 +8753,37 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:27:21.910Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "(empty)",
+     "to": "P2 - Medium"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Big bets"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Team control"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:40.299Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_matrix_quadrant": "Big bets",
+   "cf_segment": "Team control"
   },
   {
    "id": "TD-015",
@@ -6766,11 +8856,20 @@
      "field": "Requirement Source",
      "from": "(empty)",
      "to": "Competitive Study"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Calendar"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T11:35:52.748Z",
-   "updatedBy": "Pradeep Kumar"
+   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedBy": "Pradeep Kumar",
+   "cf_segment": "Calendar"
   },
   {
    "id": "TD-101",
@@ -6920,14 +9019,32 @@
      "field": "Notes",
      "from": "(empty)",
      "to": "https://mail.zoho.in/zm/#stream/tab/60045559917/1757852658803115500/3/viewGroupEntity"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "(empty)",
+     "to": "Ship now"
+    },
+    {
+     "at": "2026-11-24T11:48:26.435Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Segment",
+     "from": "(empty)",
+     "to": "Capture and views"
     }
    ],
-   "updatedAt": "2026-11-16T09:19:08.702Z",
+   "updatedAt": "2026-11-24T11:48:26.435Z",
    "createdAt": "2026-11-16T09:15:34.467Z",
    "updatedBy": "Pradeep Kumar",
    "clientOwner": [
     "Vasanthakumar V"
-   ]
+   ],
+   "cf_matrix_quadrant": "Ship now",
+   "cf_segment": "Capture and views"
   }
  ],
  "views": [
