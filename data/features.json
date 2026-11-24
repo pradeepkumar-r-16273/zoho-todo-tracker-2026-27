@@ -3032,12 +3032,20 @@
      "field": "Segment",
      "from": "(empty)",
      "to": "Capture and views"
+    },
+    {
+     "at": "2026-11-24T12:10:06.740Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "Fill-ins",
+     "to": "Ship now"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedAt": "2026-11-24T12:10:06.740Z",
    "updatedBy": "Pradeep Kumar",
-   "cf_matrix_quadrant": "Fill-ins",
+   "cf_matrix_quadrant": "Ship now",
    "cf_segment": "Capture and views"
   },
   {
