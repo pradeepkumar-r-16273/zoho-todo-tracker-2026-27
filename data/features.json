@@ -6949,6 +6949,35 @@
    "kanbanBy": null,
    "zoom": null,
    "widths": {}
+  },
+  {
+   "id": "tv-mwuhzxy8s7lj",
+   "name": "Testing Pipeline",
+   "type": "grid",
+   "filters": [
+    {
+     "f": "testing",
+     "op": "any",
+     "v": [
+      "In Progress",
+      "In Pipeline",
+      "On Hold",
+      "Not Started"
+     ]
+    }
+   ],
+   "sorts": [],
+   "groupBy": null,
+   "hidden": [
+    "startDate",
+    "targetDate",
+    "sourceNote",
+    "mobile",
+    "html"
+   ],
+   "kanbanBy": null,
+   "zoom": null,
+   "widths": {}
   }
  ],
  "milestones": [
