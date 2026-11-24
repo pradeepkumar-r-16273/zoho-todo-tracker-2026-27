@@ -2409,7 +2409,7 @@
    "analysis": "Done",
    "design": "Done",
    "html": null,
-   "server": "In Progress",
+   "server": "Done",
    "client": "Done",
    "testing": "In Progress",
    "mobile": null,
@@ -2437,10 +2437,18 @@
      "field": "Priority",
      "from": "P1 - High",
      "to": "P0 - Critical"
+    },
+    {
+     "at": "2026-11-24T09:35:06.361Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Server",
+     "from": "In Progress",
+     "to": "Done"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-16T08:42:50.972Z",
+   "updatedAt": "2026-11-24T09:35:06.361Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
