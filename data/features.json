@@ -4653,7 +4653,7 @@
    "module": "Platform",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": "P1 - High",
+   "priority": "P0 - Critical",
    "source": "Support Ticket",
    "pm": [
     "Pradeep Kumar"
@@ -4732,10 +4732,18 @@
      "field": "Segment",
      "from": "(empty)",
      "to": "Hygiene"
+    },
+    {
+     "at": "2026-11-24T12:09:22.394Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P1 - High",
+     "to": "P0 - Critical"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedAt": "2026-11-24T12:09:22.394Z",
    "updatedBy": "Pradeep Kumar",
    "cf_matrix_quadrant": "Ship now",
    "cf_segment": "Hygiene"
