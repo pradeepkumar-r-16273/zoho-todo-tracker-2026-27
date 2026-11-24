@@ -5289,12 +5289,20 @@
      "field": "Segment",
      "from": "(empty)",
      "to": "Mobile"
+    },
+    {
+     "at": "2026-11-24T12:10:15.756Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "Ship now",
+     "to": "Fill-ins"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedAt": "2026-11-24T12:10:15.756Z",
    "updatedBy": "Pradeep Kumar",
-   "cf_matrix_quadrant": "Ship now",
+   "cf_matrix_quadrant": "Fill-ins",
    "cf_segment": "Mobile"
   },
   {
