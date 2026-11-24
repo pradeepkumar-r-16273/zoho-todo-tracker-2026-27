@@ -4740,12 +4740,20 @@
      "field": "Priority",
      "from": "P1 - High",
      "to": "P0 - Critical"
+    },
+    {
+     "at": "2026-11-24T12:09:34.873Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "Ship now",
+     "to": "Big bets"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T12:09:22.394Z",
+   "updatedAt": "2026-11-24T12:09:34.873Z",
    "updatedBy": "Pradeep Kumar",
-   "cf_matrix_quadrant": "Ship now",
+   "cf_matrix_quadrant": "Big bets",
    "cf_segment": "Hygiene"
   },
   {
