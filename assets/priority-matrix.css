@@ -1,0 +1,36 @@
+/* Priority matrix add-on page (assets/priority-matrix.js). New pm-* classes only. */
+.dash .tile.pm-tile { grid-column: span 3; }
+.pm-mx { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.pm-q { border: 1px solid var(--line); border-top: 3px solid var(--line-2); border-radius: 10px; padding: 12px 14px; background: var(--surface); min-width: 0; }
+.pm-q.pm-ship { border-top-color: var(--good); }
+.pm-q.pm-bets { border-top-color: var(--accent); }
+.pm-q.pm-fill { border-top-color: var(--line-2); }
+.pm-q.pm-prove { border-top-color: #c98500; }
+.pm-q h3 { margin: 0; font-size: 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.pm-q h3 span { font-size: 12px; font-weight: 400; color: var(--ink-3); }
+.pm-q .sub { margin: 2px 0 10px; }
+.pm-chip { display: inline-block; max-width: 100%; font: inherit; font-size: 12px; line-height: 1.4; padding: 3px 9px; margin: 0 6px 6px 0; border-radius: 6px; border: 1px solid var(--line-2); background: var(--surface-2); color: var(--ink); text-align: left; cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pm-chip:hover { border-color: var(--accent); }
+.pm-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pm-chip.p0 { border-color: var(--danger); color: var(--danger); background: #fdecec; }
+.pm-chip.calc { border-style: dashed; }
+.legend i.pm-key-calc { background: var(--surface-2); border: 1.5px dashed var(--ink-3); }
+.pm-toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); cursor: pointer; }
+.pm-chip[draggable="true"] { cursor: grab; }
+.pm-chip.dragging { opacity: .4; }
+.pm-q.over { outline: 2px dashed var(--accent); outline-offset: -2px; background: var(--accent-soft); }
+.pm-np h3 { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.pm-np .pm-count { font-size: 12px; font-weight: 400; color: var(--ink-3); }
+.legend i.pm-key { background: #fdecec; border: 1.5px solid var(--danger); }
+.pm-tw { overflow-x: auto; }
+.pm-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+.pm-table th, .pm-table td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.pm-table th { font-size: 12px; font-weight: 500; color: var(--ink-3); }
+.pm-table tbody tr { cursor: pointer; }
+.pm-table tbody tr:hover { background: var(--surface-2); }
+.pm-table tbody tr:last-child td { border-bottom: 0; }
+.pm-table .pm-num { font-variant-numeric: tabular-nums; }
+@media (max-width: 900px) {
+  .dash .tile.pm-tile { grid-column: span 6; }
+  .pm-mx { grid-template-columns: minmax(0, 1fr); }
+}
