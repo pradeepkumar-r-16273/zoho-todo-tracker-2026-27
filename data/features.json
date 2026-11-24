@@ -4518,7 +4518,7 @@
    "module": "Platform",
    "phase": "Pipeline",
    "status": "In Progress",
-   "priority": "P3 - Low",
+   "priority": "P1 - High",
    "source": "Internal Feedback",
    "pm": [
     "Gayathri K",
@@ -4639,12 +4639,28 @@
      "field": "Segment",
      "from": "(empty)",
      "to": "Hygiene"
+    },
+    {
+     "at": "2026-11-24T12:09:59.523Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P3 - Low",
+     "to": "P1 - High"
+    },
+    {
+     "at": "2026-11-24T12:09:59.526Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Matrix quadrant",
+     "from": "Fill-ins",
+     "to": "Ship now"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedAt": "2026-11-24T12:09:59.526Z",
    "updatedBy": "Pradeep Kumar",
-   "cf_matrix_quadrant": "Fill-ins",
+   "cf_matrix_quadrant": "Ship now",
    "cf_segment": "Hygiene"
   },
   {
