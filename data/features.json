@@ -2468,7 +2468,7 @@
    "sourceNote": "Roadmap & Work Items post (Gayathri, 04 Nov 2026)",
    "subitems": [],
    "analysis": "Done",
-   "design": null,
+   "design": "Done",
    "html": null,
    "server": "Done",
    "client": "Done",
@@ -2498,10 +2498,18 @@
      "field": "Analysis",
      "from": "(empty)",
      "to": "Done"
+    },
+    {
+     "at": "2026-11-24T09:34:59.841Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Design",
+     "from": "(empty)",
+     "to": "Done"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T09:34:57.809Z",
+   "updatedAt": "2026-11-24T09:34:59.841Z",
    "updatedBy": "Pradeep Kumar"
   },
   {
