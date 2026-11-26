@@ -2694,7 +2694,7 @@
    "module": "Task Core",
    "phase": "Working on",
    "status": "In Progress",
-   "priority": "P2 - Medium",
+   "priority": "P1 - High",
    "source": "Customer Requirement",
    "pm": [
     "Pradeep Kumar"
@@ -2756,10 +2756,18 @@
      "field": "Segment",
      "from": "(empty)",
      "to": "Capture and views"
+    },
+    {
+     "at": "2026-11-26T05:43:02.004Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Priority",
+     "from": "P2 - Medium",
+     "to": "P1 - High"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedAt": "2026-11-26T05:43:02.004Z",
    "updatedBy": "Pradeep Kumar",
    "cf_matrix_quadrant": "Fill-ins",
    "cf_segment": "Capture and views"
