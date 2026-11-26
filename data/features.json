@@ -1325,7 +1325,7 @@
    "html": null,
    "server": "Done",
    "client": "Done",
-   "testing": "In Progress",
+   "testing": "Done",
    "mobile": "In Progress",
    "attachments": [],
    "comments": [],
@@ -1351,10 +1351,18 @@
      "field": "Segment",
      "from": "(empty)",
      "to": "Automation"
+    },
+    {
+     "at": "2026-11-26T06:30:10.893Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Testing",
+     "from": "In Progress",
+     "to": "Done"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedAt": "2026-11-26T06:30:10.893Z",
    "updatedBy": "Pradeep Kumar",
    "cf_segment": "Automation"
   },
