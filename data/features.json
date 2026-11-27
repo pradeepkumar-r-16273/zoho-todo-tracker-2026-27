@@ -2179,7 +2179,7 @@
    "analysis": "Done",
    "design": "In Progress",
    "html": null,
-   "server": "In Progress",
+   "server": "Done",
    "client": "Not Started",
    "testing": null,
    "mobile": null,
@@ -2239,10 +2239,18 @@
      "field": "Segment",
      "from": "(empty)",
      "to": "Capture and views"
+    },
+    {
+     "at": "2026-11-27T07:05:23.010Z",
+     "by": "Pradeep Kumar",
+     "action": "edit",
+     "field": "Server",
+     "from": "In Progress",
+     "to": "Done"
     }
    ],
    "createdAt": "2026-11-13T09:00:00+05:30",
-   "updatedAt": "2026-11-24T11:48:26.435Z",
+   "updatedAt": "2026-11-27T07:05:23.010Z",
    "updatedBy": "Pradeep Kumar",
    "cf_matrix_quadrant": "Ship now",
    "cf_segment": "Capture and views"
